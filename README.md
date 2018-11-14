@@ -3,6 +3,8 @@ Group A's repo for COMP2019 Software Engineering Group Project
 
 ## Dependencies
 pip install pdfminer.six
+pip install rdflib
+pip install sparqlwrapper
 
 ## Converting PDF to .txt files
 open command prompt
