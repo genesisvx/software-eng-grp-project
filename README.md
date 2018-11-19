@@ -8,13 +8,21 @@ pip install rdflib
 
 pip install sparqlwrapper
 
-## Converting PDF to .txt files
+## Getting keywords of an article
+# If file is pdf
 open command prompt
 ```
 python
->>import custom_pdf2txt
->>convert = custom_pdf2txt.convert_pdf_to_txt
->>convert('Test1.pdf','Test1.txt')
+>>from doc_processing import process_pdf2txt
+>>keywords = import process_pdf2txt('path/to/file.pdf' , 'newfilename.txt')
+```
+this function will convert filename.pdf to newfilename.txt and saves it , 
+then it returns an array of keywords tagged with Agrovoc concepts.
+
+# If file is text
+```
+python
+>>from doc_processing import process_pdf2txt
+>>keywords = import process_pdf2txt('path/to/file.txt' ,)
 
 ```
-if Test1.txt doesn't exist , then it will be created automatically , so there is no need for it to be created beforehand.
