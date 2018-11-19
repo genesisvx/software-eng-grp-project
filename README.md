@@ -9,7 +9,7 @@ pip install rdflib
 pip install sparqlwrapper
 
 ## Getting keywords of an article
-# If file is pdf
+### If file is pdf
 open command prompt
 ```
 python
@@ -19,7 +19,7 @@ python
 this function will convert filename.pdf to newfilename.txt and saves it , 
 then it returns an array of keywords tagged with Agrovoc concepts.
 
-# If file is text
+### If file is text
 ```
 python
 >>from doc_processing import process_pdf2txt
