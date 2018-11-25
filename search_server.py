@@ -216,13 +216,19 @@ def searchDoc(query):
     breakpoint()
     data = es.search(index , doc_type , body)
 
+    # gives titles of relevant documents
+    print('Titles\n')
     for d in data['aggregations']['by_title']['buckets']:
         print(d['key']) #print title of relevant docs
 
+    print('*'*100 + '\n')
+
+
+    # gives 'show' amount of paragraphs in the document that might answer the query
     for d in data['aggregations']['by_title']['buckets']:
-        i = 0
+        show = 0
         for entry in d['by_top_hits']['hits']['hits']:
-            i = i + 1
+            show = show + 1
             if i > 4:
                 break
             print(entry['_source']['title'])
