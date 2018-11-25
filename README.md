@@ -14,15 +14,13 @@ pip install sparqlwrapper
 
 ## Getting keywords , ntriples articles
 ### Individual pdf file
+the processed document will then have two new files , docname_keywords.txt & docname_ntriples.txt
 open command prompt
 ```
 python
 >>from doc_processing import process_pdf2txt
 >>process_pdf2txt('path/to/file.pdf')
 ```
-this function will convert filename.pdf to newfilename.txt and saves it , 
-then it returns an array of keywords tagged with Agrovoc concepts.
-
 ### Individual txt file
 ```
 python
@@ -30,8 +28,6 @@ python
 >>process_txt('path/to/file.txt')
 
 ```
-
-the processed document will then have two new files , docname_keywords.txt & docname_ntriples.txt
 
 ### Batch processing files in a directoy
 ```
