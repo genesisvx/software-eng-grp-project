@@ -4,7 +4,7 @@ from elasticsearch import Elasticsearch , helpers
 from pathlib import Path
 
 #configuration
-es_process_path = 'C:/Users/Acer/Desktop/Nottingham/Year 2/Group Project/NLP/elasticsearch-6.5.0/bin/elasticsearch.bat'
+es_process_path = 'D:/elasticsearch-6.5.0/bin/elasticsearch.bat'
 index = 'agrovoc'
 doc_type = '_doc'
 port = 9200
@@ -86,7 +86,7 @@ def batchIndexDocuments(path):
             tempFile.close()
 
         body = []
-        for p in para:
+        for i ,p in enumerate(para):
             action = {
                     "_index":index ,
                     "_type":doc_type ,
@@ -96,8 +96,15 @@ def batchIndexDocuments(path):
                     "ntriples" : ntriples ,
                     "concepts" : concepts ,
             }
+        
             body.append(action)
 
+            #batch the bulk operation to prevent MemoryError
+            if(i>0 and i%100==0):
+                helpers.bulk(es , body)
+                body = []
+ 
+        #insert remainder of paragraphs
         helpers.bulk(es , body)
 
 def searchDoc(query):
@@ -216,25 +223,124 @@ def searchDoc(query):
     breakpoint()
     data = es.search(index , doc_type , body)
 
-    # gives titles of relevant documents
-    print('Titles\n')
     for d in data['aggregations']['by_title']['buckets']:
         print(d['key']) #print title of relevant docs
 
-    print('*'*100 + '\n')
-
-
-    # gives 'show' amount of paragraphs in the document that might answer the query
     for d in data['aggregations']['by_title']['buckets']:
-        show = 0
+        i = 0
         for entry in d['by_top_hits']['hits']['hits']:
-            show = show + 1
+            i = i + 1
             if i > 4:
                 break
             print(entry['_source']['title'])
             print(entry['_source']['paragraph'] + '\n')
             print('*'*100)
-            
+
+
+#prototype
+def searchDocPrototype():
+    query = "acid content langsat"
+    ntriples = []
+    temp_concepts = ['http://aims.fao.org/aos/agrovoc/c_24347' , 'http://aims.fao.org/aos/agrovoc/c_92']
+
+    if len(temp_concepts) != 0 and len(ntriples) !=0:
+        body = {
+            "query": {
+                "bool" : {
+                        "should" : [
+                                {"match" : {"paragraph":query}} ,
+                                {"match" : {"title":query}},
+                                {"terms" : {"ntriples.raw":ntriples}},
+                            ] ,
+                        "must" : {
+                                {"terms" : {"concepts":temp_concepts}},
+                            },
+                        
+                    }
+                
+            },
+            "aggs" : {
+                "by_title" : {
+                    "terms" : {
+                        "field" : "title.raw" ,
+                        "order" : {"max_score":"desc"},
+                        } ,
+                    "aggs" : {
+                        "by_top_hits" : {"top_hits" : {"size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                    }
+                    } ,
+                }
+        }
+    elif len(temp_concepts) != 0 and len(ntriples) == 0:
+        body = {
+            "query": {
+                "bool" : {
+                        "should" : [
+                                {"match" : {"paragraph":query}} ,
+                                {"match" : {"title":query}},
+                            ] ,
+                        "must" : {
+                                "terms" : {"concepts":temp_concepts},
+                            },
+                        
+                    }
+                },
+            "aggs" : {
+                "by_title" : {
+                    "terms" : {
+                        "field" : "title.raw" ,
+                        "order" : {"max_score":"desc"},
+                        } ,
+                    "aggs" : {
+                        "by_top_hits" : {"top_hits" : {"size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                    }
+                    } ,
+                }
+            }
+    else:
+        body = {
+            "query": {
+                "bool" : {
+                        "should" : [
+                                {"match" : {"paragraph":query}} ,
+                                {"match" : {"title":query}},
+                            ] ,
+                        
+                    },
+
+
+                },
+            "aggs" : {
+                "by_title" : {
+                    "terms" : {
+                        "field" : "title.raw" ,
+                        "order" : {"max_score":"desc"},
+                        } ,
+                    "aggs" : {
+                        "by_top_hits" : {"top_hits" : {"size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                    }
+                    } ,
+                }
+            }
+
+    breakpoint()
+    data = es.search(index , doc_type , body)
+
+    for d in data['aggregations']['by_title']['buckets']:
+        print(d['key']) #print title of relevant docs
+
+    for d in data['aggregations']['by_title']['buckets']:
+        i = 0
+        for entry in d['by_top_hits']['hits']['hits']:
+            i = i + 1
+            if i > 4:
+                break
+            print(entry['_source']['title'])
+            print(entry['_source']['paragraph'] + '\n')
+            print('*'*100)
             
     
 
