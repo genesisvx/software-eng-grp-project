@@ -3,7 +3,7 @@ import nltk , custom_pdf2txt , sparql , pathlib , time, string
 from custom_pdf2txt import convert_pdf_to_txt
 from nltk import word_tokenize
 from nltk.corpus import stopwords
-from sparql import getConceptTag2 , getIntersectionOfNTriples
+from sparql import getConceptTagVirtuoso , getIntersectionOfNTriplesVirtuoso
 
 #helper function to stem out numbers
 def is_number(s):
@@ -44,7 +44,7 @@ def process_pdf2txt(path):
     for v in vocab:
         # the foward slash is a syntax error in SPARQL 
         v = v.replace('\\','')
-        potential_keywords.append({'word':v , 'baseTag': getConceptTag2(v)})
+        potential_keywords.append({'word':v , 'baseTag': getConceptTagVirtuoso(v)})
 
     #cleaning up the query results by removing empty responses
     #format of query output refer to GitHub
@@ -54,7 +54,7 @@ def process_pdf2txt(path):
             tagged_keywords.append({'word':k['word'] , 'baseTag':k['baseTag']['results']['bindings'][0]['concept']['value']})
 
     #save the keywords / ntriples in a file for easier pre-processing
-    keywordsFile = pathlib.Path(path).stem + '_keywords.txt'
+    keywordsFile = pathlib.Path(path).stem + '_keywordsVirtuoso.txt'
     keywordsFilePath = pathlib.Path(path).parent / keywordsFile
 
     _file = open(keywordsFilePath , 'w+' , encoding='utf-8')
@@ -65,11 +65,11 @@ def process_pdf2txt(path):
     _file.close()
     
     #save the ntriples in a file for easier pre-processing
-    ntriplesFile = pathlib.Path(path).stem + '_ntriples.txt'
+    ntriplesFile = pathlib.Path(path).stem + '_ntriplesVirtuoso.txt'
     ntriplesFile = pathlib.Path(path).parent / ntriplesFile
 
     _file = open(ntriplesFile , 'w+' , encoding='utf-8')
-    ntriples = getIntersectionOfNTriples(tagged_keywords)
+    ntriples = getIntersectionOfNTriplesVirtuoso(tagged_keywords)
     for nt in ntriples:
         _file.write(nt + '\n')
 
@@ -107,7 +107,7 @@ def process_txt(path):
     for v in vocab:
         # the foward slash is a syntax error in SPARQL 
         v = v.replace('\\','')
-        potential_keywords.append({'word':v , 'baseTag': getConceptTag2(v)})
+        potential_keywords.append({'word':v , 'baseTag': getConceptTagVirtuoso(v)})
 
     #cleaning up the query results by removing empty responses
     #format of query output refer to GitHub
@@ -117,7 +117,7 @@ def process_txt(path):
             tagged_keywords.append({'word':k['word'] , 'baseTag':k['baseTag']['results']['bindings'][0]['concept']['value']})
 
     #save the keywords in a file for easier pre-processing
-    keywordsFile = pathlib.Path(path).stem + '_keywords.txt'
+    keywordsFile = pathlib.Path(path).stem + '_keywordsVirtuoso.txt'
     keywordsFilePath = pathlib.Path(path).parent / keywordsFile
 
     _file = open(keywordsFilePath , 'w+' , encoding='utf-8')
@@ -128,11 +128,11 @@ def process_txt(path):
     _file.close()
 
     #save the ntriples in a file for easier pre-processing
-    ntriplesFile = pathlib.Path(path).stem + '_ntriples.txt'
+    ntriplesFile = pathlib.Path(path).stem + '_ntriplesVirtuoso.txt'
     ntriplesFile = pathlib.Path(path).parent / ntriplesFile
 
     _file = open(ntriplesFile , 'w+' , encoding='utf-8')
-    ntriples = getIntersectionOfNTriples(tagged_keywords)
+    ntriples = getIntersectionOfNTriplesVirtuoso(tagged_keywords)
     for nt in ntriples:
         _file.write(nt + '\n')
 
