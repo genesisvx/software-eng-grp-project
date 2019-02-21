@@ -1,10 +1,12 @@
-import subprocess , nltk
+import subprocess , nltk , gensim
 from sparql import getConceptTag2 , getIntersectionOfNTriples
 from elasticsearch import Elasticsearch , helpers
 from pathlib import Path
 
+model = gensim.models.KeyedVectors.load_word2vec_format('D:/Fara work/GoogleNews-vectors-negative300.bin', binary=True)
+
 #configuration
-es_process_path = 'D:/elasticsearch-6.5.0/bin/elasticsearch.bat'
+es_process_path = 'D:/Fara work/elasticsearch-6.5.4/bin/elasticsearch.bat'
 index = 'agrovoc'
 doc_type = '_doc'
 port = 9200
@@ -12,7 +14,7 @@ host = 'localhost'
 #start process
 p = subprocess.Popen(es_process_path)
 #conncet to node
-es = Elasticsearch([{'host':host , 'port':port}])
+es = Elasticsearch([{'host':host , 'port':port}])  
 
 def putIndexMapping():
     mappings = {
@@ -113,6 +115,17 @@ def searchDoc(query):
     ntriples = []
     tokens = nltk.word_tokenize(query)
     tokens = [t for t in tokens if t not in nltk.corpus.stopwords.words('english')]
+    similar = []
+    for t in tokens:
+        try:
+            query = model.similar_by_word(t, topn=5)
+            for q in query:
+                similar.append(q[0])
+        except KeyError:
+            continue
+    for t in similar:
+        tokens.append(t)
+    print(tokens)
     
     #try to find concepts from tokens
     for t in tokens:
