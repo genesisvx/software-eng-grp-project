@@ -58,8 +58,10 @@ def ntripleIntersectionHelper(arr):
     return ntriples
 
 def process_pdf2txt(path):
-    newfilename = pathlib.Path(path).stem + '.txt'
-    newfilename = pathlib.Path(path).parent / newfilename
+    path = pathlib.Path(path)
+    print('Now processing {}\n'.format(path.stem))
+    newfilename = path.stem + '.txt'
+    newfilename = path.parent / newfilename
     text = convert_pdf_to_txt(path , newfilename)
     
     cutoff_index=text.find('References')
@@ -71,6 +73,7 @@ def process_pdf2txt(path):
     vocab = sorted(set(text))
     
     #remove all the number tokens
+    cutoff = 0 
     for v in vocab:
         if v.startswith('a'):
             cutoff = vocab.index(v)
@@ -85,10 +88,15 @@ def process_pdf2txt(path):
       
     #may return empty after query AGROVOC , thus is potential keywords
     potential_keywords = []
+    loop = asyncio.get_event_loop()
+    tempConcept = loop.run_until_complete(taggingHelper(vocab))
+
     for v in vocab:
         # the foward slash is a syntax error in SPARQL 
         v = v.replace('\\','')
-        potential_keywords.append({'word':v , 'baseTag': getConceptTagVirtuoso(v)})
+
+    for v , concept in zip(vocab,tempConcept):
+        potential_keywords.append({'word':v , 'baseTag':concept})
 
     #cleaning up the query results by removing empty responses
     #format of query output refer to GitHub
@@ -97,23 +105,23 @@ def process_pdf2txt(path):
         if len(k['baseTag']['results']['bindings'])!=0:
             tagged_keywords.append({'word':k['word'] , 'baseTag':k['baseTag']['results']['bindings'][0]['concept']['value']})
 
-    #save the keywords / ntriples in a file for easier pre-processing
+    #save the keywords in a file for easier pre-processing
     keywordsFile = pathlib.Path(path).stem + '_keywordsVirtuoso.txt'
     keywordsFilePath = pathlib.Path(path).parent / keywordsFile
 
     _file = open(keywordsFilePath , 'w+' , encoding='utf-8')
     for keyword in tagged_keywords:
         entry = "{} {}\n".format(keyword['word'],keyword['baseTag'])
-        _file.write(entry)    
-              
+        _file.write(entry)
+        
     _file.close()
-    
+
     #save the ntriples in a file for easier pre-processing
     ntriplesFile = pathlib.Path(path).stem + '_ntriplesVirtuoso.txt'
     ntriplesFile = pathlib.Path(path).parent / ntriplesFile
 
     _file = open(ntriplesFile , 'w+' , encoding='utf-8')
-    ntriples = getIntersectionOfNTriplesVirtuoso(tagged_keywords)
+    ntriples = ntripleIntersectionHelper(tagged_keywords)
     for nt in ntriples:
         _file.write(nt + '\n')
 
@@ -199,8 +207,10 @@ def process_txt(path):
 def batch_process_txt(directory):
     path = pathlib.Path(directory)
 
-    for i in path.glob('**/*.txt'):
-        process_txt(i)
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        files = path.glob('**/*.txt')
+        executor.map(process_txt,files)
+
 
 def batch_process_pdf2txt(directory):
     path = pathlib.Path(directory)
