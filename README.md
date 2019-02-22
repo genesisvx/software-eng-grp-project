@@ -4,6 +4,9 @@ Group A's repo for COMP2019 Software Engineering Group Project
 ## Dependencies
 install elastic search @ https://www.elastic.co/downloads/elasticsearch
 
+install google pretrained model @https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
+(note that this is 1.5GB)
+
 pip install elasticsearch
 
 pip install pdfminer.six
@@ -18,6 +21,11 @@ pip install sparqlwrapper
 ```
 #configuration
 es_process_path = 'your/path/to/elasticsearch-6.5.0/bin/elasticsearch.bat'
+```
+- change the model path variable in search_server.py in line 6
+```
+#configuration
+model = gensim.models.KeyedVectors.load_word2vec_format('D:/Fara work/GoogleNews-vectors-negative300.bin', binary=True)
 ```
 - create index and index all test documents in test texts
 ```
