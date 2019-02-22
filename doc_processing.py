@@ -214,12 +214,22 @@ def batch_process_txt(directory):
 
 def batch_process_pdf2txt(directory):
     path = pathlib.Path(directory)
+    files = path.glob('**/*.pdf')
 
-    for i in path.glob('**/*.pdf'):
+    executor = concurrent.futures.ProcessPoolExecutor()
+    futures = dict()
+
+    for i in files:
+        future = executor.submit(process_pdf2txt,i)
+        futures[future] = i 
+
+    for future in concurrent.futures.as_completed(futures):
+        i = futures[future]
         try:
-            print('Now processing {}\n'.format(i.stem))
-            process_pdf2txt(i)
+            print(future.results)
         except:
-            print('Text extraction for {} is not allowed'.format(i.stem))
-            pass
+            print('Text extraction not allowed for {}\n'.format(i.stem))
+            #print('Text extraction for {} is not allowed'.format(i.stem))
+            
+
     

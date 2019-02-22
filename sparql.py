@@ -30,6 +30,7 @@ def getConceptTagVirtuoso(prefLabel):
 		""".format(prefLabel))
 	sparql.setReturnFormat(JSON)
 	try:
+		print('doing tagging for {}\n'.format(prefLabel))
 		results = sparql.query().convert()
 	except (urllib.error.HTTPError , SPARQLExceptions.EndPointInternalError):
 		#some pdfs have weird characters that will cause errors for Virtuoso server , so for those cases return an empty results
