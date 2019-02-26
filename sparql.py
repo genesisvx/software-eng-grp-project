@@ -16,7 +16,7 @@ def getConceptTagVirtuoso(prefLabel):
 					?s skosxl:literalForm ?o.
 					?o bif:contains "'{0}'"
 					BIND(str(?o) as ?oo)
-					FILTER (?oo = "{0}")
+					FILTER (STRLEN("{0}") = STRLEN(?oo))
 				}}
 			}}
 
@@ -45,31 +45,37 @@ def getNTriplesFromConceptVirtuoso(concept1):
 	ntriple = None;   
 	sparql = SPARQLWrapper('http://localhost:8890/sparql')
 	sparql.setQuery("""
+		PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
 		PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 		PREFIX agro: <http://aims.fao.org/aos/agrontology#>
-		SELECT *
+		select * from <http://agrovocTest.com>
 		WHERE {{
-			  <{}> ?p ?o
+			?{0} ?p ?o
+			FILTER(
+				?p = skos:broader||
+				?p = skos:narrower||
+				?p = skos:related||
+				STRSTARTS(STR(?p), "http://aims.fao.org/aos/agrontology#")
+			)
 		}}
+		LIMIT 100
 		""".format(concept1))
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
 	return results
 
-def getIntersectionOfNTriplesVirtuoso(keywordArr):
-	ntriples = []
-	for keyword in keywordArr:
-		res = getNTriplesFromConceptVirtuoso(keyword['baseTag'])
+# def getIntersectionOfNTriplesVirtuoso(keywordArr):
+# 	ntriples = []
+# 	for keyword in keywordArr:
+# 		res = getNTriplesFromConceptVirtuoso(keyword['baseTag'])
 
-		for potentialNTriple in res['results']['bindings']:
-			for keyword2 in keywordArr:
-				if potentialNTriple['o']['value'].find(keyword2['baseTag']) >= 0:
-					tempStr = keyword['baseTag'] + " {} ".format(potentialNTriple['p']['value']) + keyword2['baseTag']
-					ntriples.append(tempStr)
+# 		for potentialNTriple in res['results']['bindings']:
+# 			for keyword2 in keywordArr:
+# 				if potentialNTriple['o']['value'].find(keyword2['baseTag']) >= 0:
+# 					tempStr = keyword['baseTag'] + " {} ".format(potentialNTriple['p']['value']) + keyword2['baseTag']
+# 					ntriples.append(tempStr)
 
-	return ntriples
+# 	return ntriples
     
     
     
