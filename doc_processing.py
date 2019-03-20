@@ -1,4 +1,4 @@
-import nltk , custom_pdf2txt , sparql , pathlib , time, string , asyncio, concurrent.futures ,re  , time
+import nltk , custom_pdf2txt , sparql , pathlib , time, string , asyncio, concurrent.futures ,re  , time , subprocess
 import multiprocessing as mp
 
 from custom_pdf2txt import convert_pdf_to_txt
@@ -132,6 +132,9 @@ def filterTrigram(potential_trigram):
     else:
         return False
 
+def jarWrapper(path):
+        subprocess.call(['java' , '-cp' , './cermine-impl-1.14-SNAPSHOT-jar-with-dependencies.jar', 'pl.edu.icm.cermine.ContentExtractor' , '-outputs' , 'jats' , '-path' , str(path) ])
+
 def process_pdf2txt(path):
     path = pathlib.Path(path)
 
@@ -165,11 +168,19 @@ def process_pdf2txt(path):
         text = queue.get(timeout = 10)
     except Exception:
         print("Took too long to convert pdf to txt...")
-        text = ''
+    
     proc.join(1)
     if proc.is_alive():
         print("Skipping this pdf...")
         proc.terminate()
+        return
+
+    #wasn't able to convert from pdf to txt
+    if text == '':
+        return
+
+    #use CERMINE to get xml representation that will help identify paragraphs during indexing
+    jarWrapper(path)
 
     #maybe this can be deleted?
     cutoff_index=text.find('References')
@@ -344,15 +355,6 @@ def process_txt(path):
         
     _file.close()
 
-    # _file = open(ntriplesFile , 'w+' , encoding='utf-8')
-    # ntriples = loop.run_until_complete(ntripleHelper(tagged_keywords))
-    # for index , nt in enumerate(ntriples) :
-    #     if (len(nt['results']['bindings'])!=0):
-    #         for nt in nt['results']['bindings']:
-    #             ntString = tagged_keywords[index]['baseTag'] + " " + nt['p']['value'] + " " + nt['o']['value']
-    #             _file.write(ntString + '\n')
-
-    # _file.close()
             
 def batch_process_txt(directory):
     path = pathlib.Path(directory)
@@ -362,7 +364,7 @@ def batch_process_txt(directory):
     with concurrent.futures.ProcessPoolExecutor() as executor:
         executor.map(process_txt,files)
 
-#hangs for some reason at the very end
+
 def batch_process_pdf2txt(directory):
     start = time.time()
     path = pathlib.Path(directory)
