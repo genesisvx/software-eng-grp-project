@@ -25,11 +25,17 @@ pip install asyncio
 #configuration
 es_process_path = 'your/path/to/elasticsearch-6.5.0/bin/elasticsearch.bat'
 ```
+- preprocess the pdf files
+```
+>>import doc_processing
+>>doc_processing.batch_process_pdf2txt('/test texts 2/')
+```
+
 - create index and index all test documents in test texts
 ```
 >>import search_server
 >>search_server.resetIndex()
->>search_server.batchIndexDocuments('/test texts/')
+>>search_server.batchIndexDocuments('/test texts 2/')
 ```
 - create a new folder at virtuoso directory , eg D:\Virtuoso OpenSource 7.2\ontology and put AGROVOC file inside
 
