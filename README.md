@@ -4,6 +4,10 @@ Group A's repo for COMP2019 Software Engineering Group Project
 ## Dependencies
 install elastic search @ https://www.elastic.co/downloads/elasticsearch
 
+install virtuoso open source version @ https://sourceforge.net/projects/virtuoso/files/
+
+AGROVOC Core NT dump file @ http://aims.fao.org/agrovoc/releases
+
 pip install elasticsearch
 
 pip install pdfminer.six
@@ -12,6 +16,8 @@ pip install rdflib
 
 pip install sparqlwrapper
 
+pip install asyncio
+
 ## Very first run
 - install all dependencies
 - change the es_process_path variable in search_server.py
@@ -19,11 +25,34 @@ pip install sparqlwrapper
 #configuration
 es_process_path = 'your/path/to/elasticsearch-6.5.0/bin/elasticsearch.bat'
 ```
+- preprocess the pdf files
+```
+>>import doc_processing
+>>doc_processing.batch_process_pdf2txt('/test texts 2/')
+```
+
 - create index and index all test documents in test texts
 ```
 >>import search_server
 >>search_server.resetIndex()
->>search_server.batchIndexDocuments('/test texts/')
+>>search_server.batchIndexDocuments('/test texts 2/')
+```
+- create a new folder at virtuoso directory , eg D:\Virtuoso OpenSource 7.2\ontology and put AGROVOC file inside
+
+- then edit this line in virtuoso.ini file in the database folder
+```
+DirsAllowed			= ., ../vad, ../ontology
+```
+- then start virtuoso , open cmd prompt with admin privileges
+```
+>cd D:\Virtuoso OpenSource 7.2\bin
+>virtuoso +service list
+vos         stopped
+>virtuoso +service start +instance vos
+```
+- then execute isql.exe in bin folder , type in this line to load the AGROVOC file stored in the ontology folder
+```
+ DB.DBA.TTLP_MT (file_to_string_output('../ontology/agrovoc_2018-11-06_core.nt'),'','http://agrovocTest.com');
 ```
 - then you can start searching
 ```
