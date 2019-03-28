@@ -6,7 +6,7 @@ from doc_processing import taggingHelper , ntripleHelper , getBigrams , getTrigr
 import xml.etree.ElementTree as ET
 
 #configuration
-es_process_path = 'A:\janse\Documents\elasticsearch-6.5.4\bin\elasticsearch.bat'
+es_process_path = 'D:/elasticsearch-6.5.0/bin/elasticsearch.bat'
 index = 'agrovoctest'
 doc_type = '_doc'
 port = 9200
@@ -52,10 +52,11 @@ def resetIndex():
 
 
 def indexHelper(f):
-
     if f.stem.find('_keywords')>0:
         return
-	
+      
+    #if f.stem.find('_keywords'):
+        #return
     concepts = []
     ntriples = []
     xmlFile = Path(str(f).replace('.txt','.cermxml'))
@@ -67,6 +68,7 @@ def indexHelper(f):
         for elem in tree.iter():
             if elem.tag == 'p':
                 para.append(elem.text)
+                #para.append(" ".join(elem.text).split())
     else:
         #something wrong with pdf to txt conversion
         if f.stat().st_size<10000:
@@ -191,7 +193,24 @@ def searchDoc(query):
     #    except KeyError:
     #        pass
     
-    asyncio.set_event_loop(asyncio.new_event_loop())
+    #asyncio.set_event_loop(asyncio.new_event_loop())
+    bigrams = getBigrams(" ".join(tokens))
+    trigrams = getTrigrams(" ".join(tokens))
+    bigrams = [" ".join(b) for b in bigrams]
+    trigrams = [" ".join(t) for t in trigrams]
+    tokens = tokens + bigrams + trigrams 
+
+    #synonyms set for the tokens
+    synset = []
+
+    for t in tokens:
+        try:
+            query = model.similar_by_word(t,topn=5)
+            for q in query:
+                synset.append(q[0])
+        except KeyError:
+            pass
+          
     loop = asyncio.get_event_loop()
     tempConcept = loop.run_until_complete((taggingHelper(tokens)))
 
@@ -341,8 +360,6 @@ def searchDoc(query):
             outputList.append('\n')
             outputList.append('\n')
     return outputList
-			
-
 
 #prototype
 def searchDocPrototype():
