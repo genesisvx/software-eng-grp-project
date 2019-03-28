@@ -193,7 +193,7 @@ def searchDoc(query):
     #    except KeyError:
     #        pass
     
-    #asyncio.set_event_loop(asyncio.new_event_loop())
+   
     bigrams = getBigrams(" ".join(tokens))
     trigrams = getTrigrams(" ".join(tokens))
     bigrams = [" ".join(b) for b in bigrams]
@@ -201,16 +201,17 @@ def searchDoc(query):
     tokens = tokens + bigrams + trigrams 
 
     #synonyms set for the tokens
-    synset = []
+    # synset = []
 
-    for t in tokens:
-        try:
-            query = model.similar_by_word(t,topn=5)
-            for q in query:
-                synset.append(q[0])
-        except KeyError:
-            pass
-          
+    # for t in tokens:
+    #     try:
+    #         query = model.similar_by_word(t,topn=5)
+    #         for q in query:
+    #             synset.append(q[0])
+    #     except KeyError:
+    #         pass
+    
+    asyncio.set_event_loop(asyncio.new_event_loop())      
     loop = asyncio.get_event_loop()
     tempConcept = loop.run_until_complete((taggingHelper(tokens)))
 
@@ -271,6 +272,13 @@ def searchDoc(query):
                     }
                 
             },
+            "highlight" : {
+                "fields":{
+                    "paragraph":{},
+                },
+                "number_of_fragments":0,
+
+            },
             "aggs" : {
                 "by_title" : {
                     "terms" : {
@@ -278,8 +286,8 @@ def searchDoc(query):
                         "order" : {"max_score":"desc"},
                         } ,
                     "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                        "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}},
                     }
                     } ,
                 }
@@ -354,11 +362,14 @@ def searchDoc(query):
           #  print(entry['_source']['paragraph'])
             outputList.append(entry['_source']['title'])
             outputList.append('\n')
-            outputList.append(entry['_source']['paragraph'])
+            outputList.append(entry['highlight']['paragraph'][0])
             outputList.append('\n')
             outputList.append('*'*100)
             outputList.append('\n')
             outputList.append('\n')
+
+    loop.close() # close event loop
+    print(data)
     return outputList
 
 #prototype
