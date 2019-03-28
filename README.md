@@ -18,6 +18,8 @@ pip install sparqlwrapper
 
 pip install asyncio
 
+pip install flask
+
 ## Very first run
 - install all dependencies
 - change the es_process_path variable in search_server.py
@@ -60,6 +62,14 @@ vos         stopped
 ```
 - if you want to process more documents and then index them , use batch_process_txt / batch_process_pdf2txt 
 - then use batchIndexDocument to index the processed documents
+
+## Flask
+- to start flask, open Powershell in the project location and run the following commands
+```
+$env:FLASK_APP = "flaskr"
+$env:FLASK_ENV="development"
+flask run --host=0.0.0.0
+```
 
 ## Getting keywords , ntriples articles
 ### Individual pdf file
