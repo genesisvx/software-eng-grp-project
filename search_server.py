@@ -18,7 +18,7 @@ es = Elasticsearch([{'host':host , 'port':port}])
 
 #use 500k , reduce 5/6th of memory requirements and it seems sufficient for use 
 #https://stackoverflow.com/questions/50478046/memory-error-when-using-gensim-for-loading-word2vec
-model = gensim.models.KeyedVectors.load_word2vec_format('C:/Users/Acer/Downloads/GoogleNews-vectors-negative300.bin/GoogleNews-vectors-negative300.bin',binary=True,limit=500000)
+#model = gensim.models.KeyedVectors.load_word2vec_format('C:/Users/Acer/Downloads/GoogleNews-vectors-negative300.bin/GoogleNews-vectors-negative300.bin',binary=True,limit=500000)
 
 def putIndexMapping():
     mappings = {
@@ -52,9 +52,11 @@ def resetIndex():
 
 
 def indexHelper(f):
-    if f.stem.find('_keywords'):
+    if f.stem.find('_keywords')>0:
         return
-
+      
+    #if f.stem.find('_keywords'):
+        #return
     concepts = []
     ntriples = []
     xmlFile = Path(str(f).replace('.txt','.cermxml'))
@@ -65,7 +67,8 @@ def indexHelper(f):
         para = []
         for elem in tree.iter():
             if elem.tag == 'p':
-                para.append(" ".join(elem.text).split())
+                para.append(elem.text)
+                #para.append(" ".join(elem.text).split())
     else:
         #something wrong with pdf to txt conversion
         if f.stat().st_size<10000:
@@ -171,7 +174,26 @@ def searchDoc(query):
     narrowerRaw = []
     tokens = nltk.word_tokenize(query)
     tokens = [t for t in tokens if t not in nltk.corpus.stopwords.words('english')]
+    outputList = []
     
+    bigrams = getBigrams(" ".join(tokens))
+    trigrams = getTrigrams(" ".join(tokens))
+    bigrams = [" ".join(b) for b in bigrams]
+    trigrams = [" ".join(t) for t in trigrams]
+    tokens = tokens + bigrams + trigrams 
+
+    #synonyms set for the tokens
+    synset = []
+	
+    #for t in tokens:
+    #   try:
+    #        query = model.similar_by_word(t,topn=5)
+    #        for q in query:
+    #            synset.append(q[0])
+    #    except KeyError:
+    #        pass
+    
+    #asyncio.set_event_loop(asyncio.new_event_loop())
     bigrams = getBigrams(" ".join(tokens))
     trigrams = getTrigrams(" ".join(tokens))
     bigrams = [" ".join(b) for b in bigrams]
@@ -188,7 +210,7 @@ def searchDoc(query):
                 synset.append(q[0])
         except KeyError:
             pass
-    
+          
     loop = asyncio.get_event_loop()
     tempConcept = loop.run_until_complete((taggingHelper(tokens)))
 
@@ -327,11 +349,17 @@ def searchDoc(query):
             i = i + 1
             if i > 4:
                 break
-            print(entry['_score'])
-            print(entry['_source']['title'])
-            print(entry['_source']['paragraph'] + '\n')
-            print('*'*100)
-    breakpoint()
+          #  print(entry['_score'])
+           # print(entry['_source']['title'])
+          #  print(entry['_source']['paragraph'])
+            outputList.append(entry['_source']['title'])
+            outputList.append('\n')
+            outputList.append(entry['_source']['paragraph'])
+            outputList.append('\n')
+            outputList.append('*'*100)
+            outputList.append('\n')
+            outputList.append('\n')
+    return outputList
 
 #prototype
 def searchDocPrototype():

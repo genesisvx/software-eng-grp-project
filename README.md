@@ -8,7 +8,7 @@ install virtuoso open source version @ https://sourceforge.net/projects/virtuoso
 
 AGROVOC Core NT dump file @ http://aims.fao.org/agrovoc/releases
 
-pip install elasticsearch pdfminer.six rdflib sparqlwrapper asyncio nltk gensim chardet
+pip install elasticsearch pdfminer.six rdflib sparqlwrapper asyncio nltk gensim chardet asyncio flask
 
 ## Very first run
 - install all dependencies
@@ -43,6 +43,24 @@ vos         stopped
 ```
 >>import search_server
 >>search_server.resetIndex()
+```
+- create a new folder at virtuoso directory , eg D:\Virtuoso OpenSource 7.2\ontology and put AGROVOC file inside
+
+- then edit this line in virtuoso.ini file in the database folder
+```
+DirsAllowed			= ., ../vad, ../ontology
+```
+- then start virtuoso , open cmd prompt with admin privileges
+```
+>cd D:\Virtuoso OpenSource 7.2\bin
+>virtuoso +service list
+vos         stopped
+>virtuoso +service start +instance vos
+```
+- then execute isql.exe in bin folder , type in this line to load the AGROVOC file stored in the ontology folder
+```
+ DB.DBA.TTLP_MT (file_to_string_output('../ontology/agrovoc_2018-11-06_core.nt'),'','http://agrovocTest.com');
+=======
 >>search_server.batchIndexDocuments('./test texts 2/')
 ```
 - then you can start searching
@@ -51,6 +69,14 @@ vos         stopped
 ```
 - if you want to process more documents and then index them , use batch_process_txt / batch_process_pdf2txt 
 - then use batchIndexDocument to index the processed documents
+
+## Flask
+- to start flask, open Powershell in the project location and run the following commands
+```
+$env:FLASK_APP = "flaskr"
+$env:FLASK_ENV="development"
+flask run --host=0.0.0.0
+```
 
 ## Getting keywords , ntriples articles
 ### Individual pdf file
