@@ -1,0 +1,144 @@
+acids http://aims.fao.org/aos/agrovoc/c_92
+agents http://aims.fao.org/aos/agrovoc/c_49873
+amylase http://aims.fao.org/aos/agrovoc/c_369
+atmosphere http://aims.fao.org/aos/agrovoc/c_8994
+biogas http://aims.fao.org/aos/agrovoc/c_9262
+biomass http://aims.fao.org/aos/agrovoc/c_926
+boiler http://aims.fao.org/aos/agrovoc/c_28286
+boilers http://aims.fao.org/aos/agrovoc/c_28286
+butanol http://aims.fao.org/aos/agrovoc/c_27473
+cake http://aims.fao.org/aos/agrovoc/c_1186
+cellulase http://aims.fao.org/aos/agrovoc/c_1419
+climate http://aims.fao.org/aos/agrovoc/c_1665
+combustion http://aims.fao.org/aos/agrovoc/c_1777
+committee http://aims.fao.org/aos/agrovoc/c_50181
+compost http://aims.fao.org/aos/agrovoc/c_1795
+composts http://aims.fao.org/aos/agrovoc/c_1795
+cost http://aims.fao.org/aos/agrovoc/c_6598
+crop http://aims.fao.org/aos/agrovoc/c_1972
+cultivation http://aims.fao.org/aos/agrovoc/c_2018
+deltas http://aims.fao.org/aos/agrovoc/c_2170
+demand http://aims.fao.org/aos/agrovoc/c_2171
+design http://aims.fao.org/aos/agrovoc/c_2208
+development http://aims.fao.org/aos/agrovoc/c_331049
+distribution http://aims.fao.org/aos/agrovoc/c_2338
+drier http://aims.fao.org/aos/agrovoc/c_2401
+economics http://aims.fao.org/aos/agrovoc/c_2481
+efficiency http://aims.fao.org/aos/agrovoc/c_2491
+effluent http://aims.fao.org/aos/agrovoc/c_24455
+electricity http://aims.fao.org/aos/agrovoc/c_2518
+emission http://aims.fao.org/aos/agrovoc/c_331377
+energy http://aims.fao.org/aos/agrovoc/c_2565
+environment http://aims.fao.org/aos/agrovoc/c_2593
+ethanol http://aims.fao.org/aos/agrovoc/c_10677
+evaporation http://aims.fao.org/aos/agrovoc/c_2739
+export http://aims.fao.org/aos/agrovoc/c_2761
+fermentation http://aims.fao.org/aos/agrovoc/c_2855
+fiber http://aims.fao.org/aos/agrovoc/c_2879
+fossil http://aims.fao.org/aos/agrovoc/c_10989
+fruit http://aims.fao.org/aos/agrovoc/c_3119
+fuel http://aims.fao.org/aos/agrovoc/c_3136
+fuels http://aims.fao.org/aos/agrovoc/c_3136
+gas http://aims.fao.org/aos/agrovoc/c_3197
+government http://aims.fao.org/aos/agrovoc/c_11230
+heat http://aims.fao.org/aos/agrovoc/c_3519
+industry http://aims.fao.org/aos/agrovoc/c_3848
+islands http://aims.fao.org/aos/agrovoc/c_3962
+kernel http://aims.fao.org/aos/agrovoc/c_25387
+lactate http://aims.fao.org/aos/agrovoc/c_4139
+landfills http://aims.fao.org/aos/agrovoc/c_35171
+materials http://aims.fao.org/aos/agrovoc/c_92337
+methane http://aims.fao.org/aos/agrovoc/c_4784
+mill http://aims.fao.org/aos/agrovoc/c_16139
+mills http://aims.fao.org/aos/agrovoc/c_16139
+nutrient http://aims.fao.org/aos/agrovoc/c_5274
+pH http://aims.fao.org/aos/agrovoc/c_5753
+palm http://aims.fao.org/aos/agrovoc/c_15807
+plant http://aims.fao.org/aos/agrovoc/c_16111
+plants http://aims.fao.org/aos/agrovoc/c_5993
+plastics http://aims.fao.org/aos/agrovoc/c_5998
+pollution http://aims.fao.org/aos/agrovoc/c_6077
+poly http://aims.fao.org/aos/agrovoc/c_37412
+power http://aims.fao.org/aos/agrovoc/c_2570
+precipitation http://aims.fao.org/aos/agrovoc/c_6161
+press http://aims.fao.org/aos/agrovoc/c_35747
+prices http://aims.fao.org/aos/agrovoc/c_6178
+process http://aims.fao.org/aos/agrovoc/c_13586
+processes http://aims.fao.org/aos/agrovoc/c_13586
+processing http://aims.fao.org/aos/agrovoc/c_6195
+product http://aims.fao.org/aos/agrovoc/c_6211
+production http://aims.fao.org/aos/agrovoc/c_6200
+products http://aims.fao.org/aos/agrovoc/c_6211
+profit http://aims.fao.org/aos/agrovoc/c_6213
+projects http://aims.fao.org/aos/agrovoc/c_330903
+properties http://aims.fao.org/aos/agrovoc/c_49874
+quality http://aims.fao.org/aos/agrovoc/c_6400
+rainfall http://aims.fao.org/aos/agrovoc/c_6435
+recycling http://aims.fao.org/aos/agrovoc/c_6478
+reduction http://aims.fao.org/aos/agrovoc/c_6483
+residue http://aims.fao.org/aos/agrovoc/c_6518
+residues http://aims.fao.org/aos/agrovoc/c_6518
+resources http://aims.fao.org/aos/agrovoc/c_9001017
+sago http://aims.fao.org/aos/agrovoc/c_15518
+sale http://aims.fao.org/aos/agrovoc/c_33129
+scrubber http://aims.fao.org/aos/agrovoc/c_25684
+sewage http://aims.fao.org/aos/agrovoc/c_7007
+shell http://aims.fao.org/aos/agrovoc/c_7032
+soil http://aims.fao.org/aos/agrovoc/c_7156
+solid http://aims.fao.org/aos/agrovoc/c_7229
+stage http://aims.fao.org/aos/agrovoc/c_330995
+standards http://aims.fao.org/aos/agrovoc/c_7367
+starch http://aims.fao.org/aos/agrovoc/c_7369
+steam http://aims.fao.org/aos/agrovoc/c_25424
+storage http://aims.fao.org/aos/agrovoc/c_7427
+sunlight http://aims.fao.org/aos/agrovoc/c_2135
+supermarkets http://aims.fao.org/aos/agrovoc/c_28773
+supplements http://aims.fao.org/aos/agrovoc/c_33996
+supply http://aims.fao.org/aos/agrovoc/c_7523
+system http://aims.fao.org/aos/agrovoc/c_330985
+tank http://aims.fao.org/aos/agrovoc/c_25699
+technology http://aims.fao.org/aos/agrovoc/c_7644
+time http://aims.fao.org/aos/agrovoc/c_7778
+utilization http://aims.fao.org/aos/agrovoc/c_8117
+vegetables http://aims.fao.org/aos/agrovoc/c_8174
+waste http://aims.fao.org/aos/agrovoc/c_8307
+wastes http://aims.fao.org/aos/agrovoc/c_8307
+wastewater http://aims.fao.org/aos/agrovoc/c_8308
+water http://aims.fao.org/aos/agrovoc/c_8309
+weather http://aims.fao.org/aos/agrovoc/c_15292
+yield http://aims.fao.org/aos/agrovoc/c_8488
+ANAEROBIC TREATMENT http://aims.fao.org/aos/agrovoc/c_34990
+FOOD PRODUCTION http://aims.fao.org/aos/agrovoc/c_3025
+Greenhouse Gases http://aims.fao.org/aos/agrovoc/c_34841
+ORGANIC ACIDS http://aims.fao.org/aos/agrovoc/c_5383
+Solid Waste http://aims.fao.org/aos/agrovoc/c_7228
+anaerobic treatment http://aims.fao.org/aos/agrovoc/c_34990
+biodegradable plastics http://aims.fao.org/aos/agrovoc/c_17a4c8fc
+crop yield http://aims.fao.org/aos/agrovoc/c_10176
+life span http://aims.fao.org/aos/agrovoc/c_4428
+ornamental plants http://aims.fao.org/aos/agrovoc/c_5417
+sea level http://aims.fao.org/aos/agrovoc/c_34115
+sustainable development http://aims.fao.org/aos/agrovoc/c_35332
+fossil fuels http://aims.fao.org/aos/agrovoc/c_cb06ade9
+Wood chips http://aims.fao.org/aos/agrovoc/c_8423
+waste disposal http://aims.fao.org/aos/agrovoc/c_8305
+renewable resources http://aims.fao.org/aos/agrovoc/c_6502
+Domestic wastes http://aims.fao.org/aos/agrovoc/c_35240
+Emission Reduction http://aims.fao.org/aos/agrovoc/c_331597
+global warming http://aims.fao.org/aos/agrovoc/c_34836
+Palm kernel http://aims.fao.org/aos/agrovoc/c_25493
+fossil fuels http://aims.fao.org/aos/agrovoc/c_cb06ade9
+organic acids http://aims.fao.org/aos/agrovoc/c_5383
+Solid Waste http://aims.fao.org/aos/agrovoc/c_7228
+anaerobic treatment http://aims.fao.org/aos/agrovoc/c_34990
+renewable resources http://aims.fao.org/aos/agrovoc/c_6502
+sustainable development http://aims.fao.org/aos/agrovoc/c_35332
+Domestic wastes http://aims.fao.org/aos/agrovoc/c_35240
+Emission Reduction http://aims.fao.org/aos/agrovoc/c_331597
+FOOD PRODUCTION http://aims.fao.org/aos/agrovoc/c_3025
+Greenhouse Gases http://aims.fao.org/aos/agrovoc/c_34841
+Oil palm http://aims.fao.org/aos/agrovoc/c_2509
+Organic Acids http://aims.fao.org/aos/agrovoc/c_5383
+Organic acids http://aims.fao.org/aos/agrovoc/c_5383
+Pilot plant http://aims.fao.org/aos/agrovoc/c_36828
+Renewable energy http://aims.fao.org/aos/agrovoc/c_25719

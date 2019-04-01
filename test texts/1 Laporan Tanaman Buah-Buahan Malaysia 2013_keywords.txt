@@ -1,9 +1,0 @@
-annual http://aims.fao.org/aos/agrovoc/c_28997
-crops http://aims.fao.org/aos/agrovoc/c_1972
-data http://aims.fao.org/aos/agrovoc/c_49816
-fruit http://aims.fao.org/aos/agrovoc/c_3119
-fruits http://aims.fao.org/aos/agrovoc/c_3131
-publication http://aims.fao.org/aos/agrovoc/c_1329377502888
-publications http://aims.fao.org/aos/agrovoc/c_1329377502888
-reports http://aims.fao.org/aos/agrovoc/c_330893
-statistics http://aims.fao.org/aos/agrovoc/c_49978

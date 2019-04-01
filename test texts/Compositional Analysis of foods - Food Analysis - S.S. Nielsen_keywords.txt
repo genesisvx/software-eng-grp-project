@@ -1,3 +1,0 @@
-c http://aims.fao.org/aos/agrovoc/c_1301
-h http://aims.fao.org/aos/agrovoc/c_3724
-p http://aims.fao.org/aos/agrovoc/c_5804

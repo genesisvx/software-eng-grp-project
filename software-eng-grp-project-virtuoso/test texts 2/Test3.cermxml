@@ -1,0 +1,1257 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta>
+      <journal-title-group>
+        <journal-title>Animal Feed Science and Technology</journal-title>
+      </journal-title-group>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.1016/j.anifeedsci.2011.08.009</article-id>
+      <title-group>
+        <article-title>Sago pith meal based diets in sheep containing different sources of nitrogen: Feed preparation, growth performance, digestibility and carcass quality</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <string-name>M. Yahya</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>M. Mahyuddin</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>A.R. Alimon</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>N. Abdullah</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>M. Ivan</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <aff id="aff0">
+          <label>0</label>
+          <institution>Institute of Tropical Agriculture, University Putra Malaysia</institution>
+          ,
+          <addr-line>43400UPM Serdang, Selangor</addr-line>
+          ,
+          <country country="MY">Malaysia</country>
+        </aff>
+      </contrib-group>
+      <pub-date>
+        <year>2011</year>
+      </pub-date>
+      <volume>170</volume>
+      <issue>2011</issue>
+      <fpage>45</fpage>
+      <lpage>52</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>8</month>
+          <year>2011</year>
+        </date>
+        <date date-type="received">
+          <day>18</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+        <date date-type="revised">
+          <day>5</day>
+          <month>8</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <abstract>
+        <p>a b s t r a c t The present research work was designed to evaluate sago pith meal (SPM) as feed for ruminants. A particle size distribution (Experiment 1) was determined in SPM prepared from sago logs by use of three different rasping sizes (large, medium and small). The large rasping produced a negligible amount of fine particles and a large amount of large particles, while small rasping produced a negligible amount of large particles and a smaller amount of fine particles than the medium rasping. Since both large and fine particles are not desirable, the SPM produced by the small rasping was considered the best as feed for ruminants and was used in two experiments with sheep (Experiments 2 and 3) to determine the digestibility and growth performance/carcass quality, respectively. Sheep were divided in each experiment into three treatments and each group was fed one of three SPM based diets: (1) control diet (CNT) contained SPM and soybean meal, (2) USM diet contained SPM, soybean meal and urea, while (3) UFM diet contained SPM, fish meal and urea. In the Experiment 2, the digestibility of dry matter was not different (P&gt;0.05) among the diets, but the digestibility of neutral detergent fiber was lower (P&lt;0.05) for the USM and UFM diets than for the CNT diet. However, there was no difference (P&gt;0.05) between the USM and UFM diets. In Experiment 3, the means for the average daily gain, feed intake, carcass weight, dressing percentage and lean meat were not different (P&gt;0.05) between the USM and UFM diets, but all were higher (P&lt;0.05) for the CNT diet than for both the USM and UFM diets. It was concluded that the small rasping is best for preparation of SPM as feed for ruminants, and that a highly soluble and rumen degradable protein supplement is more efficient than urea to support the maximum microbial growth in the rumen of sheep fed diets based on SPM supplemented with soybean meal or fish meal.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Sago pith meal</kwd>
+        <kwd>Rasping size</kwd>
+        <kwd>Sheep growth</kwd>
+        <kwd>Carcass quality</kwd>
+        <kwd>Digestibility</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>-</title>
+      <p>i n f o</p>
+    </sec>
+    <sec id="sec-2">
+      <title>1. Introduction</title>
+      <p>
+        Sago belongs to a group of starch-bearing palms found in the Malay Archipelago that stretches from the Philippines to
+Papua New Guinea. The most common and productive species that is grown in the Borneo part of Malaysia, mainly Sarawak,
+is Metroxylon sagu. It is used commercially for production of starch. However, there is abundance of sago in Malaysia and
+dried rasped sago pith has been used for feeding animals since 1873
+        <xref ref-type="bibr" rid="ref3">(Burkhill, 1966)</xref>
+        . Together with sago flour, the whole
+sago pith meal (SPM) may be grouped into an energy feed based on an international classification standard
+        <xref ref-type="bibr" rid="ref12">(Harris et al.,
+1968)</xref>
+        . The use of feed sources containing highly fermentable carbohydrate such as SPM is important in optimizing livestock
+production in Malaysia as the lack of energy in commonly available feeds is more critical than the lack of other nutrients.
+Several studies have been conducted on the use of SPM in diets of pigs and poultry, but very few with feeding SPM to
+ruminants. The ensiled sago fiber with molasses and urea resulted in poor growth in lambs
+        <xref ref-type="bibr" rid="ref27 ref28">(Yardav and Mahyuddin, 1991)</xref>
+        ,
+but when supplemented with corn grain and fish meal the growth of lambs was greatly improved
+        <xref ref-type="bibr" rid="ref27 ref28">(Yardav et al., 1991)</xref>
+        .
+There is no recent information on feeding SPM to sheep, especially the type of dietary protein supplement such as rumen
+degradable protein (RDP), rumen undegradable protein (RUP) and/or non-protein N (NPN) required to obtain a reasonable
+growth, feed utilization and carcass quality in sheep. Also, there are numerous commercial factories in Malaysia that produce
+SPM from sago logs using different sizes of rasping, which can produce different rasping sizes of SPM. The feed particle size
+dynamics affects the nutritive value of feeds
+        <xref ref-type="bibr" rid="ref16">(Murphy and Kennedy, 1993)</xref>
+        ; the relatively large particles affect the normal
+passage from the rumen
+        <xref ref-type="bibr" rid="ref10">(Faichney and Brown, 1991)</xref>
+        , while fine particles formed lumps in the stomach resulting in lower
+digestion in the intestinal tract of pigs
+        <xref ref-type="bibr" rid="ref13">(Ivan and Farrell, 1976)</xref>
+        and grinding too finely corn grain had negative effect on
+gain and feed conversion efficiency in feedlot cattle
+        <xref ref-type="bibr" rid="ref7">(Corona et al., 2005)</xref>
+        . Therefore, it was hypothesized that different sizes
+of rasping may produce different distribution of sizes of particles and, therefore, not all rasping sizes may be suitable to
+produce SPM for use in diets of ruminants. Consequently, the first objective of the present study was to test the hypothesis
+by the determination of the particle size distribution and chemical composition from use of different rasping sizes to prepare
+SPM from sago logs by a factory in Sarawak; a rasping size that produced the largest proportion of desirable medium and
+small size particles and smallest proportion of undesirable large and fine size particles in SPM was then selected. The second
+objective was to use the selected rasping size SPM as dietary base in combination with supplements of soybean meal (SBM)
+as RDP, fish meal (FM) as RUP and urea as NPN to assess the potential of SPM based diets in terms of the digestibility, growth
+performance and carcass quality in sheep.
+      </p>
+    </sec>
+    <sec id="sec-3">
+      <title>2. Materials and methods</title>
+      <sec id="sec-3-1">
+        <title>2.1. Particle size distribution—Experiment 1</title>
+        <p>Three routinely used rasping sizes (large, medium and small) were used to prepare SPM from split sago logs by a
+commercial factory in Sarawak, Malaysia. One batch of each large and medium rasping and two batches of small rasping were
+prepared and used in the present Experiment 1 to determine the particle size distribution. Approximately 130 g sample from
+each batch was each placed on the top of a series of 11 sieve pens fixed on a particle test-sieve shaker (Endecotts Model
+EFL2 mk3, Chelmsford, Essex, UK). The pen with the largest mesh openings was placed on the top, followed down with the
+decreasing mesh openings, with a collection pen on the bottom. There were two different mesh size sieves for the large mesh
+sieve group and three for each medium, small and fine mesh sieve group (Table 1). Seven larger mesh size sieve pens were
+manufactured by the N.V. Metaagaas, Hangelo, Holland, while the remaining smaller size mesh sieve pens were supplied
+by the Endecotts, Chelmsford, Essex, UK. Each sample was shaken for 5 min. The particles retained on each sieve and on the
+bottom collection pen were weighed. The weights on the sieves assigned to large, medium, small and fine mesh groups were
+combined and their percentage of the sample weight was calculated. The chemical composition was determined for each
+rasping (Table 1), while the mineral composition was determined only for the small rasping (Table 2).</p>
+      </sec>
+      <sec id="sec-3-2">
+        <title>2.2. Housing (Experiment 2 and 3)</title>
+        <p>Sheep used in the two experiments were housed in individual pens with automatic drinking nipples and slatted floor
+in an open wooden sheep barn raised above the ground. All sheep were drenched with Systamex (Welcome Foundation
+Ltd., London, UK) to control internal parasites. The care of the experimental animals was in accordance with the country
+standards (including halal slaughter) and the experimental protocol was reviewed by the Institutional Animal Care and Use
+Committee.</p>
+      </sec>
+      <sec id="sec-3-3">
+        <title>2.3. Diets (Experiment 2 and 3)</title>
+        <p>Three experimental total mixed diets were prepared using the small rasping SPM (determined in Experiment 1 to be the
+most appropriate for feeding ruminants as discussed bellow), and three sources of the dietary N; SBM as RDP, FM as RUP
+and urea as soluble NPN (Table 3). The diets were (1) CTN-control diet containing SPM and SBM, (2) USM diet containing
+SPM, SBM and urea, and (3) UFM diet containing SPM, FM and urea.</p>
+        <p>In the control diet (CNT) SBM provided most of the dietary crude protein (CP), while in the other two diets majority of
+the CP was as NPN in the form of urea and SPM and the rest of CP was either SBM (diet USM) or FM (diet UFM). All three diets
+were approximately isonitrogenous (2.7 to 2.8 g N/kg dry matter (DM)) and isocaloric (16 to 17 MJ gross energy/kg DM).
+Ammonium sulfate provided required dietary sulfur, while the vitamin–mineral premix (Vifosmin 2, Lazuli Sdn. Bhd., Kuala
+Lumpur, Malaysia) provided required dietary vitamins and minerals. The total mixed diets were prepared at approximately
+2-weekly intervals and a small amount was taken from each mixed diet as a sample.</p>
+      </sec>
+      <sec id="sec-3-4">
+        <title>2.4. Digestibility—Experiment 2</title>
+        <p>Nine one-year old male sheep were shorn and randomly assigned to three treatment groups in a Latin square experiment
+with three diets (Table 3) and three periods replicated over three squares. Over 30 days prior to the start of the experiment
+the sheep were fed a sheep commercial diet (based on rice bran and SBM) and occasionally placed into metabolism crates
+for training. All sheep were weighed before the start of the experiment. The experiment consisted of three test periods, each
+of two weeks adaptation and 5 days collection of feces. Dietary rations were weighed and fed twice daily in equal portions
+at 08:30 and 16:30. Before feeding, all rations were mixed with 15% water by weight to prevent waste and dustiness. During
+the adaptation the amount of feed offered to individual sheep was adjusted to minimize refusals. The total fecal output was
+collected, weighed and sampled (10%) daily before the morning feeding. The feed intakes and refusals were recorded and
+sampled (10%) daily. Samples of feces, feed and refusals were accumulated in plastic bags. All samples were stored at −20 ◦C
+for chemical analysis.</p>
+      </sec>
+      <sec id="sec-3-5">
+        <title>2.5. Growth performance and carcass quality—Experiment 3</title>
+        <p>
+          Twenty one approximately four months old male sheep were used in a feeding experiment lasting 91 days. The sheep
+were weighed and blocked into seven groups of three animals each in descending order of their initial weights. The sheep
+in each group were then randomly assigned to three dietary treatments based on a randomized block design
+          <xref ref-type="bibr" rid="ref9">(Cox, 1980)</xref>
+          and fed the diet CNT, USM or UFM ad libitum in excess (10%) of individual intakes. Feed refusals were collected weighed
+and sampled each morning before feeding. Individual feed intakes were recorded daily. The sheep were allowed to adapt
+to the assigned experimental diet for two weeks prior to the start of the 91-day experiment. Thereafter they were sheared
+and weighed on two consecutive days after feed and water was withdrawn for overnight. The same shearing and weighing
+procedure was used at the end of the experiment. The average of the two consecutive weighing was considered as the initial
+or final live body weight. The sheep were also weighed monthly during the experiment.
+        </p>
+        <p>After the end of the feeding experiment two heaviest sheep from each treatment were starved for 24 h, weighed and
+slaughtered (halal method). This procedure was repeated every 2 days until all lambs were slaughtered. Dead weights were
+recorded immediately after slaughter. Thereafter they were skinned, eviscerated and the heads and shanks removed. Each
+carcass was split into halves through the middle of the spine by an electric saw. The warm carcass weight was taken as the
+sum of the two halves, while the chilled carcass weight was the weight of the two halves after 24 h chilling at 4 ◦C. Other
+measurements made on the chilled carcass include the kidney fat, channel fat and the back fat thickness. The thickness was
+measured at the 12th rib incision of the left carcass side. The left side of the chilled carcass was manually separated into lean
+meat, bones, and subcutaneous and intramuscular fats (separable fats). The weights of these components were multiplied
+by two to obtain their estimated total weights in the whole carcass and to calculate the meat:bone ratio. The calculations
+were as follows:</p>
+        <p>100
+Dressing % = hot carcass weight × starved live weight</p>
+      </sec>
+      <sec id="sec-3-6">
+        <title>2.6. Chemical analysis</title>
+        <p>All samples of SPM, diets, refusals and feces were dried in an oven at 60 ◦C for 48 h and ground to pass 1 mm screen in a
+Wiley Mill (Model 4; Thomas Scientific, Swedesboro, NJ, USA). Analytical DM was determined by overnight drying at 103 ◦C.
+The samples were stored in air tight glass containers.</p>
+        <p>
+          Concentrations of ash and organic matter (OM) (method no. 7.009), and ether extract (EE) (method no. 13.033) were
+determined according to
+          <xref ref-type="bibr" rid="ref1">AOAC (1984)</xref>
+          . The determination of fiber fractions, neutral detergent fiber (aNDFom) and acid
+detergent fiber (ADFom), without sodium sulfide and expressed free of ash was based on the procedure of
+          <xref ref-type="bibr" rid="ref25">Van Soest et al.
+(1991</xref>
+          ). However, it was noted that aNDFom extraction from SPM using normal strength aNDFom solution did not dissolve
+all the starch present, which caused difficulty in filtration. Therefore, the samples were pre-digested by incubation at 38 ◦C
+overnight in amylase (EC 3.2.1.1, Type I-A; Sigma, St Luis, USA) solution (1 ml enzyme suspension in 1 L of distilled water
+containing 3.56 g KH2PO4 and 7.22 g Na2HPO4 at pH 7.0). This was followed by digestion in a more concentrated aNDFom
+solution
+          <xref ref-type="bibr" rid="ref6">(Close and Menke, 1986)</xref>
+          . Determination of ADFom was similar to that for aNDFom; the ADFom digestion
+solution contained 11 N H2SO4 and 20 g acetylthrimethylammonium bromide. The lignin with ash residue left after ADFom
+procedure was ashed in a muffle furnace at 550 ◦C for 4 h to determine the concentration of acid insoluble ash (AIA). The
+concentration of the acid detergent lignin (ADL) was then calculated by subtracting AIA from the lignin with ash residue,
+while the concentration of cellulose was determined by subtracting the concentrations of hemicelluloses, ADL and AIA from
+the concentration of aNDFom. All the above procedures were sequential on the same samples. The starch concentration in
+SPM samples was determined according to previously reported procedures
+          <xref ref-type="bibr" rid="ref2 ref26">(Woods and Aurand, 1976; Aurand et al., 1987)</xref>
+          .
+Crude protein was determined by micro-Kjeldahl procedure, while bomb calorimetry (Adiabatic Oxygen Bomb Calorimeter,
+Par Instrument Co., Moline, IL, USA) was used to determine gross energy.
+        </p>
+        <p>For determination of mineral elements the SPM samples were digested in a solution comprising of 12 ml 65% HNO3, 12 ml
+70% HClO4 and 1 ml 98% H2SO4. After appropriate dilution with deionized water the concentrations of Ca, Na, K, Fe, Cu, Co,
+Mn, Zn and Cd were determined using atomic absorption spectrophotometer (Shimadzu model AA-680, Kyoto, Japan). The
+concentration of phosphorus was determined colorimetrically using autoanalyzer (Technicon Instrument Co., Tarryton, NY,
+USA).</p>
+        <p>
+          The rib chop samples were defrosted and prepared for EE based on the method no 13.033 of
+          <xref ref-type="bibr" rid="ref1">AOAC (1984)</xref>
+          . The meat was
+separated from the vertebral bone and minced in a blender. About 3 g of the meat was transferred in a previously tarred
+and dried cellulose extraction thimble containing a small portion of purified sand and glass rod. The sample was thoroughly
+mixed with the sand in the thimble by using the glass road, placed in a 50 ml beaker for drying at 125 ◦C for 1.5 h. Thereafter,
+crude lipids were extracted with ether in a Soxhlet apparatus (Narang Medical Limited, New Delhi, India).
+        </p>
+      </sec>
+      <sec id="sec-3-7">
+        <title>2.7. Statistical analysis</title>
+        <p>
+          Data from the 3 × 3 multiple Latin square design with three replicated squares (Experiment 2) were analyzed by general
+linear model procedure
+          <xref ref-type="bibr" rid="ref22">(SAS, 2004)</xref>
+          . Each cell was replicated with three animals over 5 day repeated measurements. The
+linear model used was as follows:
+        </p>
+        <p>Yijk1 =</p>
+        <p>+ Si + Dj + Pk + A1 + (PA)jk + εi1k1
+where i = 1, 2, 3; j = 1, 2, 3; k = 1, 2, 3; l = 1, 2, 3,. . .9; Yijkl is the observed parameter for i-th square, j-th diet, k-th period and l-th
+animal; is the population mean; Si is the effect of i-th square; Dj is the effect of j-th diet; Pk is the effect of k-th period; A1 is
+the effect of l-th animal; (PA)kl is the interaction between k-th period and l-th animal; and εijkl are all other influences on cell
+mean, including random experimental error and various components of any interactions that exist that are not accounted
+for in the other model terms.</p>
+        <p>The degrees of freedom for the squares, diet, period, animal and error term were 2, 2, 2, 8, and 122, respectively. When
+the main effects were significant the Bonferonni’s multiple range test was used to evaluate differences among means;
+significance was declared at P&lt;0.05. Except for the interaction between period and animal, no other two-way or three-way
+interactions were detected.</p>
+        <p>Data from the feeding experiment (Experiment 3) were analyzed according to randomized block design using general
+linear model:</p>
+        <p>Yij = Bi + Dj + εij
+where i = 1, 2, 3,. . ., 7; j = 1, 2, 3; Yij is the observed parameter for diet j in block i; Bi is the mean yield for block i; Dj is the
+treatment effect on the observed parameter for diet j; and εij represents the random unit variation within a block.</p>
+        <p>When the main effects were significant the Bonferonni’s test was used to evaluate differences among means; significance
+was declared at P&lt;0.05.</p>
+      </sec>
+    </sec>
+    <sec id="sec-4">
+      <title>3. Results</title>
+      <sec id="sec-4-1">
+        <title>3.1. Particle size distribution and chemical composition</title>
+        <p>The large rasping of split sago logs produced the largest percentage (62.3) of large size and smallest percentage (0.9) of
+fine size SPM particles (Table 1). The medium and small rasping produced very little of the large particles, but although the
+percentages of the medium and small particle sizes were similar, the small rasping produced a 3-fold less of the fine particles
+than the medium rasping. The chemical composition of the large, medium and small rasping SPM samples was similar. The
+concentration of starch in SPM showed the highest values (722–751 g/kg DM), followed by aNDFom (126–135 g/kg DM).</p>
+      </sec>
+      <sec id="sec-4-2">
+        <title>3.2. Digestibility</title>
+        <p>The apparent DM digestibility (Table 4) of the three experimental diets based on SPM (CNT, USM and UFM) was similar
+(P&gt;0.05). However the digestibility of OM was higher (P&lt;0.05) for the UFM diet than for the USM diet, but there was no
+difference between the CNT diet and the USM diet (P&gt;0.05). There were differences (P&lt;0.05) among the diets in the digestibility
+of CP, which ranked UFM &gt; USM &gt; CNT. The digestibility of aNDFom was not different (P&gt;0.05) between the diets USM and
+UFM, but it was higher (P&lt;0.05) for the diet CNT than for the other diets (USM and UFM). The digestibility of EE was lower
+(P&lt;0.05) for the diet USM than for the diets CNT and UFM, while there was no difference (P&gt;0.05) between the diets CNT
+and UFM.</p>
+      </sec>
+      <sec id="sec-4-3">
+        <title>3.3. Growth performance</title>
+        <p>Means within rows followed with different superscript letters are statistically different (P&lt;0.05).</p>
+        <p>EE, ether extract.</p>
+        <p>Means within rows followed with different superscript letters are statistically different (P&lt;0.05).</p>
+        <p>The average initial body weight of sheep was not different (P&gt;0.05) among the dietary treatments (Table 5). However, the
+average final body weight, total weight gain, daily gain and daily feed intake were all higher (P&lt;0.05) for the diet CNT than for
+the diets USM and UFM. There was no difference (P&gt;0.05) between the diet USM and UFM in the average final body weight,
+but the total weight gain and average daily gain were higher (P&lt;0.05) for the diet UFM than for the diet USM. However, the
+feed conversion ratio was higher (P&lt;0.05) for the diet USM than for the diet CNT, but there were no differences (P&gt;0.05)
+between the diets CNT and UFM and between the diets USM and UFM.</p>
+      </sec>
+      <sec id="sec-4-4">
+        <title>3.4. Carcass composition</title>
+        <p>There were no differences (P&gt;0.05) among the experimental diets in the separable fat, meat:bone ratio and back fat
+(Table 6). There were though differences (P&lt;0.05) in the starved live weight among the diets, which ranked CNT &gt; UFM &gt; USM.
+However, the hot carcass weight, chilled carcass weight, dressing percentage and lean meat were higher (P&lt;0.05) for
+the diet CNT than for the diets USM and UFM, but there were no differences (P&gt;0.05) between the diets USM and
+UFM. The renal–pelvic fat was higher (P&lt;0.05) for the diet CNT than for the diet USM, but there were no differences
+(P&gt;0.05) between the diets CNT and UFM and between the diets USM and UFM. The deboned rib cut EE was lower
+(P&lt;0.05) for the diet USM than for the diets CNT and UFM, but there were no differences between the diets CNT and
+UFM.</p>
+      </sec>
+    </sec>
+    <sec id="sec-5">
+      <title>4. Discussion</title>
+      <p>
+        The results on the SPM particle size distribution from different rasping sizes clearly showed that for ruminant feeding the
+use of the small rasping of sago logs produced the best type of SPM. This is because the small rasping produced a negligible
+amount of large particles and lower amount of fine particles in comparison with the medium rasping. Although the large
+rasping also produced a negligible amount of fine particles it also produced a very large amount (62%) of large size particles
+that affect normal passage from the rumen
+        <xref ref-type="bibr" rid="ref10">(Faichney and Brown, 1991)</xref>
+        . Reduced size of corn grain increased daily gains
+        <xref ref-type="bibr" rid="ref11 ref24">(Galyean et al., 1979; Turgeon et al., 1983)</xref>
+        and starch digestibility
+        <xref ref-type="bibr" rid="ref18">(Ouellet et al., 2010)</xref>
+        in finishing steers. On the other hand,
+fine size particles were found to produce lumps in the stomach of pigs, which did not permit good penetration and mixing
+with digestive substances, resulting in a lower digestibility of the diet
+        <xref ref-type="bibr" rid="ref13">(Ivan and Farrell, 1976)</xref>
+        . Also, too fine grinding of corn
+grain had negative effects on daily gains and feed conversion efficiency in finishing steers
+        <xref ref-type="bibr" rid="ref7">(Corona et al., 2005)</xref>
+        . Clearly, the
+feed particle size dynamics affects the nutritive value of feeds in ruminants
+        <xref ref-type="bibr" rid="ref16">(Murphy and Kennedy, 1993)</xref>
+        and the size of
+rasping did not appreciably affect the chemical composition of SPM in the present study (Experiment 1). Therefore the small
+rasping preparation of SPM appears to be the most suitable as ruminant feed and was selected for the follow-up experimental
+work with sheep in the present study (Experiments 2 and 3).
+      </p>
+      <p>
+        The CNT diet comprised of approximately two thirds SPM and one third SBM, and resulted in a reasonably good growth
+performance (gain, feed intake and feed:gain ratio) of sheep. However, when approximately 76% of the SBM portion in the
+CNT diet was replaced by an equivalent amount of N in the form of NPN (urea; diet USM) and increased amount of SPM the
+growth performance of sheep decreased. This was in spite of approximately the same apparent digestibility of DM and OM
+in the two diets. It is though interesting to note that the digestibility of aNDFom and the feed intake of lambs fed the USM
+diet decreased. Although the feed palatability might have been negatively affected somewhat by the extra dietary SPM and
+the urea supplement, the lower digestibility of aNDFom was most probably responsible for the lower feed intake. This is in
+agreement with the suggestion of
+        <xref ref-type="bibr" rid="ref15">Leng (1990)</xref>
+        that the voluntary feed intake may be stimulated by higher digestibility. This
+would indicate that the rumen microbial activity was negatively affected by the increased dietary SPM and urea supplement,
+resulting in the lower digestibility of aNDFom and increased rumen fill in the present experiment. A lower feed intake and
+growth of goats was reported when SPM replaced 60% of a commercial concentrate diet
+        <xref ref-type="bibr" rid="ref23">(Tuen, 1994)</xref>
+        . However the dietary
+SPM had a positive effect on the nutrient utilization, while the growth performance and digestibility was not affected when
+SPM replaced corn grain in the diet of cattle
+        <xref ref-type="bibr" rid="ref17 ref4">(Chanjula and Ngampongsai, 2009; Ngampongsai and Chanjula, 2009)</xref>
+        .
+      </p>
+      <p>
+        The replacement of SBM in the diet USM with FM (diet UFM vs diet USM) resulted in only a small improvement in the
+growth performance of sheep. In addition to poorer growth performance and digestibility there was also indication for
+poorer carcass composition in sheep fed urea in combination with SBM or FM (diets USM and UFM vs diet CNT). This was
+especially so in the case of dressing percentage and lean meat yield. It therefore appears that although the level of N in the
+form of ammonia available to rumen bacteria might have been adequate for all three diets, there was probably shortage of
+available amino acid/peptide N for maximal growth of bacteria in sheep fed the diets USM and UFM. In addition, SPM contains
+high percentage of rumen fermentable starch that would contribute to higher rate of energy release in the rumen. A greater
+amount of available energy in the rumen leads to a requirement for more RDP
+        <xref ref-type="bibr" rid="ref8">(Cooper at al., 2002)</xref>
+        .
+        <xref ref-type="bibr" rid="ref20">Rooke and Armstrong
+(1989)</xref>
+        drew attention to the importance of a supply of RDP, such as casein, rather than NPN, such as urea, in stimulating
+rumen microbial N synthesis. Indeed
+        <xref ref-type="bibr" rid="ref21">Satter and Armstrong (1975)</xref>
+        pointed out that dietary urea is rapidly hydrolyzed in the
+rumen, but rumen carbohydrate degradation and microbial growth is slower process than the releasing of ammonia N, thus,
+urea is inefficiently used by microorganisms. Also, it was reported
+        <xref ref-type="bibr" rid="ref5">(Chen et al., 1987)</xref>
+        that rumen bacteria have a preference
+for peptide N, which might be supplied by RDP. A sufficient amount of RDP must be present in the diet to support maximum
+bacterial growth yield and fermentation in the rumen
+        <xref ref-type="bibr" rid="ref14">(Ivan et al., 1996)</xref>
+        . It is apparent that the supplements of urea with SBM
+or FM have not fulfilled this requirement in the present experiment. Additional research is conducted in this laboratory to
+gain more information on the effects of the present SPM based diets on rumen fermentation, microbial synthesis of protein
+and duodenal flow of the dietary components.
+      </p>
+    </sec>
+    <sec id="sec-6">
+      <title>5. Conclusion</title>
+      <p>A properly prepared SPM appears to be acceptable source of the dietary energy for ruminants and the small rasping size
+is most appropriate for its preparation from the sago logs. Such preparation results in good distribution of sizes of particles,
+without excessive amounts of large and fine particles that negatively affect digestion of the diet by ruminants.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="ref1">
+        <mixed-citation>
+          <string-name>
+            <surname>AOAC</surname>
+          </string-name>
+          ,
+          <year>1984</year>
+          .
+          <article-title>Official Methods of Analysis of the Association of Official Analytical Chemists</article-title>
+          , 14th ed. Arlington, VA, USA.
+        </mixed-citation>
+      </ref>
+      <ref id="ref2">
+        <mixed-citation>
+          <string-name>
+            <surname>Aurand</surname>
+            ,
+            <given-names>L.W.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Woods</surname>
+            ,
+            <given-names>A.E.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Wells</surname>
+            ,
+            <given-names>M.R.</given-names>
+          </string-name>
+          ,
+          <year>1987</year>
+          .
+          <article-title>Food Composition and Analysis</article-title>
+          .
+          <source>Van Norstrand Reinhold</source>
+          , London, UK, pp.
+          <fpage>174</fpage>
+          -
+          <lpage>176</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref3">
+        <mixed-citation>
+          <string-name>
+            <surname>Burkhill</surname>
+            ,
+            <given-names>I.H.</given-names>
+          </string-name>
+          ,
+          <year>1966</year>
+          .
+          <article-title>A dictionary of the Economic Products of the Malay Peninsular</article-title>
+          ,
+          <source>Vol. II. Ministry of Agriculture and Cooperatives</source>
+          , Kuala Lumpur, Malaysia, pp.
+          <fpage>1484</fpage>
+          -
+          <lpage>1488</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref4">
+        <mixed-citation>
+          <string-name>
+            <surname>Chanjula</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ngampongsai</surname>
+            ,
+            <given-names>W.</given-names>
+          </string-name>
+          ,
+          <year>2009</year>
+          .
+          <article-title>Effects of sago palm pith as replacement for corn grain on intake, rumen fermentation characteristics and microbial N supply of cattle fed paspalum plicatulum hay</article-title>
+          .
+          <source>Asian-Austral. J Anim. Sci</source>
+          .
+          <volume>22</volume>
+          ,
+          <fpage>378</fpage>
+          -
+          <lpage>387</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref5">
+        <mixed-citation>
+          <string-name>
+            <surname>Chen</surname>
+            ,
+            <given-names>G.H.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Strobel</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Russell</surname>
+            ,
+            <given-names>J.B.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Sniffen</surname>
+            ,
+            <given-names>C.J.</given-names>
+          </string-name>
+          ,
+          <year>1987</year>
+          .
+          <article-title>Effect of hydrophobicity on utilization of peptides by ruminal bacteria in vitro</article-title>
+          .
+          <source>Appl. Environ. Microbiol</source>
+          .
+          <volume>53</volume>
+          ,
+          <fpage>2021</fpage>
+          -
+          <lpage>2025</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref6">
+        <mixed-citation>
+          <string-name>
+            <surname>Close</surname>
+            ,
+            <given-names>W.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Menke</surname>
+            ,
+            <given-names>K.H.</given-names>
+          </string-name>
+          ,
+          <year>1986</year>
+          . Selected Topics in Animal Nutrition, 2nd ed. The Institute of Animal Nutrition, University of Hohenheim, Stuttgart, Germany, pp.
+          <fpage>A</fpage>
+          .22-A.23.
+        </mixed-citation>
+      </ref>
+      <ref id="ref7">
+        <mixed-citation>
+          <string-name>
+            <surname>Corona</surname>
+            ,
+            <given-names>L.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rodriguez</surname>
+            ,
+            <given-names>S.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ware</surname>
+            ,
+            <given-names>R.A.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Zinn</surname>
+            ,
+            <given-names>R.A.</given-names>
+          </string-name>
+          ,
+          <year>2005</year>
+          .
+          <article-title>Comparative effects of whole, ground, dry-rolled, and steam-flaked corn on digestion and growth performance in feedlot cattle</article-title>
+          .
+          <source>Prof. Anim. Sci</source>
+          .
+          <volume>21</volume>
+          ,
+          <fpage>200</fpage>
+          -
+          <lpage>206</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref8">
+        <mixed-citation>
+          <string-name>
+            <surname>Cooper</surname>
+            ,
+            <given-names>R.J.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Milton</surname>
+            ,
+            <given-names>C.T.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Klopfenstein</surname>
+            ,
+            <given-names>T.J.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Jordan</surname>
+            ,
+            <given-names>D.J.</given-names>
+          </string-name>
+          ,
+          <year>2002</year>
+          .
+          <article-title>Effect of corn processing on degradable intake protein requirement of finishing cattle</article-title>
+          .
+          <source>J. Anim. Sci</source>
+          .
+          <volume>80</volume>
+          ,
+          <fpage>242</fpage>
+          -
+          <lpage>247</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref9">
+        <mixed-citation>
+          <string-name>
+            <surname>Cox</surname>
+            ,
+            <given-names>D.F.</given-names>
+          </string-name>
+          ,
+          <year>1980</year>
+          .
+          <article-title>Design and analysis in nutritional and physiological experimentation</article-title>
+          .
+          <source>J. Dairy Sci</source>
+          .
+          <volume>63</volume>
+          ,
+          <fpage>313</fpage>
+          -
+          <lpage>321</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref10">
+        <mixed-citation>
+          <string-name>
+            <surname>Faichney</surname>
+            ,
+            <given-names>G.J.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Brown</surname>
+            ,
+            <given-names>G.H.</given-names>
+          </string-name>
+          ,
+          <year>1991</year>
+          .
+          <article-title>Critical size of particles living the rumen of sheep given chopped or ground lucerne hay</article-title>
+          . In:
+          <string-name>
+            <surname>Wan Zahari</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Tajuddin</surname>
+            ,
+            <given-names>Z.A.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Abdullah</surname>
+            ,
+            <given-names>N.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Wong</surname>
+            ,
+            <given-names>H.K.</given-names>
+          </string-name>
+          (Eds.),
+          <source>Proceedings of the Third International Symposium on the Nutrition of Herbivorous</source>
+          . UPM Serdang, Malaysia, p.
+          <fpage>29</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref11">
+        <mixed-citation>
+          <string-name>
+            <surname>Galyean</surname>
+            ,
+            <given-names>M.L.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Wagner</surname>
+            ,
+            <given-names>D.G.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Owens</surname>
+            ,
+            <given-names>F.N.</given-names>
+          </string-name>
+          ,
+          <year>1979</year>
+          .
+          <article-title>Corn particle size and site and extent of digestion by steers</article-title>
+          .
+          <source>J. Anim. Sci</source>
+          .
+          <volume>49</volume>
+          ,
+          <fpage>204</fpage>
+          -
+          <lpage>210</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref12">
+        <mixed-citation>
+          <string-name>
+            <surname>Harris</surname>
+            ,
+            <given-names>L.E.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Asplund</surname>
+            ,
+            <given-names>J.M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Crampton</surname>
+            ,
+            <given-names>E.W.</given-names>
+          </string-name>
+          ,
+          <year>1968</year>
+          .
+          <article-title>An international feed nomenclature and methods for summarizing and using feed data to calculate diets</article-title>
+          .
+          <source>Utah Agric. Exp. Sta. Bull</source>
+          .
+          <volume>479</volume>
+          ,
+          <fpage>391</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref13">
+        <mixed-citation>
+          <string-name>
+            <surname>Ivan</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Farrell</surname>
+            ,
+            <given-names>D.J.</given-names>
+          </string-name>
+          ,
+          <year>1976</year>
+          .
+          <article-title>Flow rates of components in digesta of pigs prepared with re-entrant cannulas in the proximal duodenum and terminal ileum, and fed semipurified, hard wheat and soft wheat diets</article-title>
+          .
+          <source>Can. J. Physiol. Pharmacol</source>
+          .
+          <volume>54</volume>
+          ,
+          <fpage>891</fpage>
+          -
+          <lpage>897</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref14">
+        <mixed-citation>
+          <string-name>
+            <surname>Ivan</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Mahadevan</surname>
+            ,
+            <given-names>S.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Dayrell</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>de</surname>
+            ,
+            <given-names>S.</given-names>
+          </string-name>
+          ,
+          <year>1996</year>
+          .
+          <article-title>Duodenal flow of microbial and feed nitrogen in sheep fed normal soybean meal or soybean meal treated with modified zein</article-title>
+          .
+          <source>J. Dairy Sci</source>
+          .
+          <volume>79</volume>
+          ,
+          <fpage>121</fpage>
+          -
+          <lpage>126</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref15">
+        <mixed-citation>
+          <string-name>
+            <surname>Leng</surname>
+            ,
+            <given-names>R.A.</given-names>
+          </string-name>
+          ,
+          <year>1990</year>
+          .
+          <article-title>Factors affecting the utilization of poor quality forages by ruminants particularly under tropical conditions</article-title>
+          .
+          <source>Nutr. Res. Rev</source>
+          .
+          <volume>3</volume>
+          ,
+          <fpage>277</fpage>
+          -
+          <lpage>303</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref16">
+        <mixed-citation>
+          <string-name>
+            <surname>Murphy</surname>
+            ,
+            <given-names>M.R.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kennedy</surname>
+            ,
+            <given-names>P.M.</given-names>
+          </string-name>
+          ,
+          <year>1993</year>
+          . Particle dynamics. In: Forbes, J.M., France, J. (Eds.), Quantitative Aspects of Ruminant Digestion and Metabolism. C.A.B. International, Oxon, UK, pp.
+          <fpage>87</fpage>
+          -
+          <lpage>105</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref17">
+        <mixed-citation>
+          <string-name>
+            <surname>Ngampongsai</surname>
+            ,
+            <given-names>W.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Chanjula</surname>
+            ,
+            <given-names>P.</given-names>
+          </string-name>
+          ,
+          <year>2009</year>
+          .
+          <article-title>Effect of different levels of sago palm pith on nutrient utilization in Thai native cattle fed with plicatulum hay (Paspalum plicatulum Michx.) and soyabean meal</article-title>
+          .
+          <source>Songlanakarin J. Sci. Technol</source>
+          .
+          <volume>31</volume>
+          ,
+          <fpage>117</fpage>
+          -
+          <lpage>124</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref18">
+        <mixed-citation>
+          <string-name>
+            <surname>Ouellet</surname>
+            ,
+            <given-names>D.R.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Faucitano</surname>
+            ,
+            <given-names>L.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Pellerin</surname>
+            ,
+            <given-names>D.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>D'</given-names>
+            <surname>Amours</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>M.</given-names>
+            ,
+            <surname>Berthiaume</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>R.</surname>
+          </string-name>
+          ,
+          <year>2010</year>
+          .
+          <article-title>Effect of corn size and soybean meal treatment on performance of finishing beef steers fed corn-silage-based diets</article-title>
+          .
+          <source>Can. J. Anim. Sci</source>
+          .
+          <volume>90</volume>
+          ,
+          <fpage>555</fpage>
+          -
+          <lpage>562</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref19">
+        <mixed-citation>
+          <string-name>
+            <surname>Pfost</surname>
+            ,
+            <given-names>H.B.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Headley</surname>
+            ,
+            <given-names>V.</given-names>
+          </string-name>
+          ,
+          <year>1976</year>
+          .
+          <article-title>Methods of determining and expressing particle size</article-title>
+          . In:
+          <string-name>
+            <surname>Pfost</surname>
+            ,
+            <given-names>H.B.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Pickering</surname>
+            ,
+            <given-names>D.</given-names>
+          </string-name>
+          (Eds.),
+          <source>Feed Manufacturing Technology. American Feed Manufacturing Association</source>
+          , Arlington, VA, USA, pp.
+          <fpage>512</fpage>
+          -
+          <lpage>517</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref20">
+        <mixed-citation>
+          <string-name>
+            <surname>Rooke</surname>
+            ,
+            <given-names>J.A.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Armstrong</surname>
+            ,
+            <given-names>D.G.</given-names>
+          </string-name>
+          ,
+          <year>1989</year>
+          .
+          <article-title>The importance of the form of nitrogen on microbial synthesis in the rumen of cattle receiving grass silage and continuous intrarumen infusion of sucrose</article-title>
+          .
+          <source>Br. J. Nutr</source>
+          .
+          <volume>61</volume>
+          ,
+          <fpage>113</fpage>
+          -
+          <lpage>121</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref21">
+        <mixed-citation>
+          <string-name>
+            <surname>Satter</surname>
+            ,
+            <given-names>L.D.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Roffler</surname>
+          </string-name>
+          ,
+          <year>1975</year>
+          .
+          <article-title>Nitrogen requirement and utilization in dairy cattle</article-title>
+          .
+          <source>J. Dairy Sci</source>
+          .
+          <volume>58</volume>
+          ,
+          <fpage>1219</fpage>
+          -
+          <lpage>1237</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref22">
+        <mixed-citation>
+          <string-name>
+            <surname>SAS</surname>
+          </string-name>
+          ,
+          <year>2004</year>
+          .
+          <article-title>Statistical Analytical System</article-title>
+          .
+          <source>SAS Institute Inc</source>
+          ., Cary, NC, USA.
+        </mixed-citation>
+      </ref>
+      <ref id="ref23">
+        <mixed-citation>
+          <string-name>
+            <surname>Tuen</surname>
+            ,
+            <given-names>A.A.</given-names>
+          </string-name>
+          ,
+          <year>1994</year>
+          .
+          <article-title>Effect of partially replacing commercial concentrate with sago pith meal on dry matter intake and digestion by goats</article-title>
+          .
+          <source>Malaysian Appl. Biol</source>
+          .
+          <volume>22</volume>
+          ,
+          <fpage>137</fpage>
+          -
+          <lpage>142</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref24">
+        <mixed-citation>
+          Turgeon Jr.,
+          <string-name>
+            <given-names>O.A.</given-names>
+            ,
+            <surname>Brink</surname>
+          </string-name>
+          ,
+          <string-name>
+            <given-names>D.R.</given-names>
+            ,
+            <surname>Britton</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>R.A.</surname>
+          </string-name>
+          ,
+          <year>1983</year>
+          .
+          <article-title>Corn particle size mixtures, roughage level and starch utilization in finishing steer diets</article-title>
+          .
+          <source>J. Anim. Sci</source>
+          .
+          <volume>57</volume>
+          ,
+          <fpage>739</fpage>
+          -
+          <lpage>749</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref25">
+        <mixed-citation>
+          <string-name>
+            <surname>Van Soest</surname>
+            ,
+            <given-names>P.J.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Robertson</surname>
+            ,
+            <given-names>J.B.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Lewis</surname>
+            ,
+            <given-names>B.A.</given-names>
+          </string-name>
+          ,
+          <year>1991</year>
+          .
+          <article-title>Methods for dietary fiber, neutral detergent fiber, and nonstarch polysaccharides in relation to animal nutrition</article-title>
+          .
+          <source>J. Dairy Sci</source>
+          .
+          <volume>74</volume>
+          ,
+          <fpage>3583</fpage>
+          -
+          <lpage>3597</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref26">
+        <mixed-citation>
+          <string-name>
+            <surname>Woods</surname>
+            ,
+            <given-names>A.E.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Aurand</surname>
+            ,
+            <given-names>L.W.</given-names>
+          </string-name>
+          ,
+          <year>1976</year>
+          .
+          <article-title>Laboratory Manual in Food Chemistry</article-title>
+          . Avi Pub. Co., Inc., Westpot, CT, USA, pp.
+          <fpage>17</fpage>
+          -
+          <lpage>18</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref27">
+        <mixed-citation>
+          <string-name>
+            <surname>Yardav</surname>
+            ,
+            <given-names>D.P.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Mahyuddin</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <year>1991</year>
+          .
+          <article-title>Nutritive value of sago fibre</article-title>
+          .
+          <source>Asian-Austral. J. Anim. Sci</source>
+          .
+          <volume>4</volume>
+          ,
+          <fpage>177</fpage>
+          -
+          <lpage>182</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref28">
+        <mixed-citation>
+          <string-name>
+            <surname>Yardav</surname>
+            ,
+            <given-names>D.P.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Mahyuddin</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Jelan</surname>
+            ,
+            <given-names>Z.A.</given-names>
+          </string-name>
+          ,
+          <year>1991</year>
+          .
+          <article-title>Performance of lambs fed urea treated sago fibre based diet with supplement</article-title>
+          .
+          <source>Asian-Austral. J. Anim. Sci</source>
+          .
+          <volume>4</volume>
+          ,
+          <fpage>183</fpage>
+          -
+          <lpage>186</lpage>
+          .
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

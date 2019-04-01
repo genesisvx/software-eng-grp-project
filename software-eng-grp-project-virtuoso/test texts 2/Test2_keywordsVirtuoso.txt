@@ -1,0 +1,104 @@
+acid http://aims.fao.org/aos/agrovoc/c_92
+acidity http://aims.fao.org/aos/agrovoc/c_8601
+acids http://aims.fao.org/aos/agrovoc/c_92
+al http://aims.fao.org/aos/agrovoc/c_317
+analysis http://aims.fao.org/aos/agrovoc/c_49928
+apple http://aims.fao.org/aos/agrovoc/c_541
+buffer http://aims.fao.org/aos/agrovoc/c_34931
+buffers http://aims.fao.org/aos/agrovoc/c_34931
+chemical http://aims.fao.org/aos/agrovoc/c_1520
+chemicals http://aims.fao.org/aos/agrovoc/c_1520
+chromatography http://aims.fao.org/aos/agrovoc/c_1594
+citric http://aims.fao.org/aos/agrovoc/c_1641
+color http://aims.fao.org/aos/agrovoc/c_1773
+composition http://aims.fao.org/aos/agrovoc/c_331025
+concentration http://aims.fao.org/aos/agrovoc/c_1801
+countries http://aims.fao.org/aos/agrovoc/c_330904
+data http://aims.fao.org/aos/agrovoc/c_49816
+date http://aims.fao.org/aos/agrovoc/c_49816
+detector http://aims.fao.org/aos/agrovoc/c_28279
+duku http://aims.fao.org/aos/agrovoc/c_24347
+et http://aims.fao.org/aos/agrovoc/c_4669
+filter http://aims.fao.org/aos/agrovoc/c_24839
+foods http://aims.fao.org/aos/agrovoc/c_3032
+freshness http://aims.fao.org/aos/agrovoc/c_330916
+fruit http://aims.fao.org/aos/agrovoc/c_3119
+fruits http://aims.fao.org/aos/agrovoc/c_3131
+gas http://aims.fao.org/aos/agrovoc/c_3197
+gram http://aims.fao.org/aos/agrovoc/c_4230
+group http://aims.fao.org/aos/agrovoc/c_50227
+indicator http://aims.fao.org/aos/agrovoc/c_330058
+injection http://aims.fao.org/aos/agrovoc/c_3871
+ion http://aims.fao.org/aos/agrovoc/c_16162
+kitchen http://aims.fao.org/aos/agrovoc/c_9001009
+laboratories http://aims.fao.org/aos/agrovoc/c_15988
+langsat http://aims.fao.org/aos/agrovoc/c_24347
+less http://aims.fao.org/aos/agrovoc/c_49963
+liquid http://aims.fao.org/aos/agrovoc/c_12200
+made http://aims.fao.org/aos/agrovoc/c_4857
+main http://aims.fao.org/aos/agrovoc/c_4523
+markets http://aims.fao.org/aos/agrovoc/c_4626
+mass http://aims.fao.org/aos/agrovoc/c_330493
+maturity http://aims.fao.org/aos/agrovoc/c_4656
+measurement http://aims.fao.org/aos/agrovoc/c_4668
+metabolism http://aims.fao.org/aos/agrovoc/c_4769
+method http://aims.fao.org/aos/agrovoc/c_4788
+methods http://aims.fao.org/aos/agrovoc/c_4788
+mode http://aims.fao.org/aos/agrovoc/c_6350c4e5
+much http://aims.fao.org/aos/agrovoc/c_5001
+need http://aims.fao.org/aos/agrovoc/c_331039
+organisms http://aims.fao.org/aos/agrovoc/c_49904
+pH http://aims.fao.org/aos/agrovoc/c_5753
+papaya http://aims.fao.org/aos/agrovoc/c_13087
+paper http://aims.fao.org/aos/agrovoc/c_16814
+phosphate http://aims.fao.org/aos/agrovoc/c_35986
+potassium http://aims.fao.org/aos/agrovoc/c_6139
+probe http://aims.fao.org/aos/agrovoc/c_330976
+products http://aims.fao.org/aos/agrovoc/c_6211
+properties http://aims.fao.org/aos/agrovoc/c_49874
+pump http://aims.fao.org/aos/agrovoc/c_6370
+rate http://aims.fao.org/aos/agrovoc/c_7314
+report http://aims.fao.org/aos/agrovoc/c_330893
+reports http://aims.fao.org/aos/agrovoc/c_330893
+research http://aims.fao.org/aos/agrovoc/c_6513
+roads http://aims.fao.org/aos/agrovoc/c_6621
+season http://aims.fao.org/aos/agrovoc/c_6911
+separation http://aims.fao.org/aos/agrovoc/c_6973
+side http://aims.fao.org/aos/agrovoc/c_7056
+simple http://aims.fao.org/aos/agrovoc/c_2393
+size http://aims.fao.org/aos/agrovoc/c_7093
+standard http://aims.fao.org/aos/agrovoc/c_7367
+standards http://aims.fao.org/aos/agrovoc/c_7367
+subjects http://aims.fao.org/aos/agrovoc/c_330829
+sugar http://aims.fao.org/aos/agrovoc/c_7507
+sweet http://aims.fao.org/aos/agrovoc/c_7502
+system http://aims.fao.org/aos/agrovoc/c_330985
+technique http://aims.fao.org/aos/agrovoc/c_14816
+time http://aims.fao.org/aos/agrovoc/c_7778
+volume http://aims.fao.org/aos/agrovoc/c_8288
+water http://aims.fao.org/aos/agrovoc/c_8309
+weight http://aims.fao.org/aos/agrovoc/c_8349
+well http://aims.fao.org/aos/agrovoc/c_8354
+Ion exchange http://aims.fao.org/aos/agrovoc/c_3933
+chemical properties http://aims.fao.org/aos/agrovoc/c_1521
+distilled water http://aims.fao.org/aos/agrovoc/c_36640
+flow rate http://aims.fao.org/aos/agrovoc/c_2989
+East Asia http://aims.fao.org/aos/agrovoc/c_29171
+gas chromatography http://aims.fao.org/aos/agrovoc/c_11097
+volatile compounds http://aims.fao.org/aos/agrovoc/c_24933
+organic acids http://aims.fao.org/aos/agrovoc/c_5383
+organic acids http://aims.fao.org/aos/agrovoc/c_5383
+organic acid http://aims.fao.org/aos/agrovoc/c_5383
+Organic acids http://aims.fao.org/aos/agrovoc/c_5383
+Lansium domesticum http://aims.fao.org/aos/agrovoc/c_24347
+ascorbic acid http://aims.fao.org/aos/agrovoc/c_661
+Organic acid http://aims.fao.org/aos/agrovoc/c_5383
+Ascorbic acid http://aims.fao.org/aos/agrovoc/c_661
+Citric acid http://aims.fao.org/aos/agrovoc/c_1631
+Lansium Domesticum http://aims.fao.org/aos/agrovoc/c_24347
+Malic acid http://aims.fao.org/aos/agrovoc/c_24421
+acid Ascorbic http://aims.fao.org/aos/agrovoc/c_661
+acid Citric http://aims.fao.org/aos/agrovoc/c_1631
+distilled water http://aims.fao.org/aos/agrovoc/c_36640
+malic acid http://aims.fao.org/aos/agrovoc/c_24421
+South East Asia http://aims.fao.org/aos/agrovoc/c_7260

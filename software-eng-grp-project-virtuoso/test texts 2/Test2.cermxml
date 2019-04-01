@@ -1,0 +1,524 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta>
+      <journal-title-group>
+        <journal-title>Int.J. ChemTech Res.</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0974-4290</issn>
+    </journal-meta>
+    <article-meta>
+      <title-group>
+        <article-title>International Journal of ChemTech Research</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <string-name>Julius Pontoh</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>Vanda S. Kamu</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <string-name>Lungguk P. Sitorus</string-name>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <aff id="aff0">
+          <label>0</label>
+          <institution>Department of Chemistry, Sam Ratulangi University</institution>
+          ,
+          <addr-line>Jalan Kampus Unsrat, Manado 95115</addr-line>
+          ,
+          <country country="ID">Indonesia</country>
+        </aff>
+      </contrib-group>
+      <pub-date>
+        <year>2015</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>7</issue>
+      <fpage>238</fpage>
+      <lpage>242</lpage>
+      <abstract>
+        <p>Langsat (Lansium domesticum var pubescens) and duku (Lansium Domesticum var. domesticum) are very popular fruits in South East Asia. Their sweet and sour taste make the fruits are very popular among the people. A research has been conducted to study the organic acids and their concentration in the fruits using a reversed phase liquid chromatographic technique. Malic and citric acids are the main organic acids found in langsat and duku fruits. Ascorbic and piroglutamic acids are present in low concentration. The total organic acids in langsat and duku fruits are 1.04 and 0.604 percent, respectively. These concentrations are agreed with the measured pH and total titratable acidity in both fruits.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>Introduction</title>
+      <p>Organic acids are chemicals consisting of carboxylic functional group with an alkyl group. The organic
+acids can be classified based on their alkyl group such as aliphatic, aromatic, or heterocyclic group, saturated
+(saturated and unsaturated), substituted (substituted and unsubstituted) and the number of carboxylic group
+(monocarboxylic, dicarboxylic, etc)1.</p>
+      <p>Organic acids present in living organisms as the products of metabolism. The present of organic acids
+in the fruits have been reported elsewhere because its roles in the taste and nutritional of the products. Organic
+acids had been reported in tomatoes2, manggo3, peaches4, various oranges, papaya and manggo5 and apple
+juice6.</p>
+      <p>Langsat (Lansium domesticum var pubescens) and duku (Lansium domesticum var. domesticum) fruits
+are very popular in the South East Asian countries due to its taste, sweet and sour7. The fruits are produced
+mostly once a year. In the harvest season, the fruits are sell everywhere from at the side roads up to the
+superstores. The short living of the fruits freshness could be the reason why the fruits are not sold so far from
+where they are produced.</p>
+      <p>So far the chemical properties of the fruits are not become the subjects of the scientific research yet.
+There is no scientific report for the organic acids in these fruits to date. Several reports show the maturity of the
+fruits to the color appearance of the fruit skin8 and the volatile compounds of the fruit9. Morton7 described a
+general composition of langsat by quote a data from India without any specific reference showed it contains
+ascorbic acid (0.001 percent). A total of sugar content in dokong (an intermediate strain between langsat and
+duku) had been reported as 11 percent at the high maturity8. The report has also included a total acid content of
+the fruit based on a basic titration method as 0.74 percent.</p>
+      <p>Gomis and Alonso1 reviewed the organic acid analysis. Organic acid analysis in foods and fruits are
+done by various methods including titrimetric, spectrometric, enzymatic, electrometric, and chromatographic
+methods. Chromatographic methods over several advantages compared to the other methods including simple
+sample preparation, and higher specificity and reliability. Enzymatic method is very specific and need fewer
+samples clean up but quite expensive. Among the chromatographic methods, high performance liquid
+chromatography is the best for organic acid due to their fewer samples clean up, fast, sensitive and specific.
+Ion-exchange, ion exclusion and reversed phase chromatographic methods have been developed for separation
+and determination of organic acids. Among the last three chromatographic methods, reversed phase
+chromatographic is the choice due to the system is a general purposes and this HPLC system is available in
+many laboratories.</p>
+      <p>The goal of this work is to determine the organic acids and their concentration in langsat and duku
+fruits.</p>
+    </sec>
+    <sec id="sec-2">
+      <title>Experimental</title>
+    </sec>
+    <sec id="sec-3">
+      <title>Materials</title>
+    </sec>
+    <sec id="sec-4">
+      <title>Sample preparation</title>
+    </sec>
+    <sec id="sec-5">
+      <title>Sample analysis.</title>
+    </sec>
+    <sec id="sec-6">
+      <title>Acidity (pH).</title>
+    </sec>
+    <sec id="sec-7">
+      <title>Total titratable acidity.</title>
+      <p>The langsat and duku fruits were purchased at the local markets in North Sulawesi, Indonesia. The
+standard organic acids including malic, citric, acetic, lactic, piroglutamic and fumaric acids, and potassium
+phosphate and phosphoric acids were purchased from Sigma.</p>
+      <p>The langsat and duku fruits were separately peeled and about 500 gram for each was homogenized
+using kitchen blender. The juice was used directly for pH measurement, and diluted juice for total titratable
+acidity. For high performance liquid chromatographic analysis, the juices were filtered through a 0.45
+Whatman filter paper with a vacuum pump. The filtered samples were directly injected in to the HPLC system.</p>
+      <p>The pH of sample was determined by using pH meter (Mettler Toledo 320). The pH meter was
+calibrated with standard buffers at pH 7.00 and 4.01. The pH meter probe was directly deep into the sample
+juice.</p>
+      <p>The total titratable acidity was measured by the method described by Sadler and Murphy10 as follow.
+Blended juice of 20 mL was diluted into distilled water up to 100 mL. The diluted juice is titrated with 0.1 N
+NaOH using phenolphthalein as indicator. The acidity was calculated based on the malic acid concentration.
+The acid concentration was calculated as following
+% Acid =</p>
+      <p>Normality of titrant x Volume of titrant x Equivalent weight of malic acid
+------------------------------------------------------------------------------------------ X 100</p>
+      <p>Volume of sample x 1000</p>
+    </sec>
+    <sec id="sec-8">
+      <title>Chromatographic analysis</title>
+      <p>Samples were analyzed using High Performance Liquid Chromatography (HPLC) system, Cecil CE
+4201 with LC- 20AD pump and UV detector SPD-20A (Cecil Instruments Limited). The column was a
+reversed phase column, Grace smart RP 18 5µ (150 x 4 mm). The detector was set at 210 nm. The injection
+volume was 20 mL per injection.</p>
+      <p>The mobile phase was a 50 mM buffer phosphate made by dilution of 6.8 g potassium dihydrogen
+phosphate in 700 mL distilled water and added phosphoric acid until pH reached 2.8 then made up to 1000 mL
+with water11. The mobile phase was run at isocratic mode at flow rate of 0.7 mL per minute.</p>
+      <p>The organic acids in the samples were determination following the retention time of each standard
+organic acid, respectively. The concentration of organic acid was determined following the standard curve for
+each organic acid12.</p>
+    </sec>
+    <sec id="sec-9">
+      <title>Results and Discussion</title>
+    </sec>
+    <sec id="sec-10">
+      <title>Acidity of the langsat and duku fruits</title>
+      <p>The acidity of the langsat and duku fruit measured as pH can be seen in Table 1. The pH of the langsat
+fruit is lower than the pH of the duku fruit, 3.85 and 4.56, respectively. In other worlds, the acidity of langsat is
+higher than the acidity of duku. This is agreed with the taste of langsat is sourer than the taste of duku.</p>
+    </sec>
+    <sec id="sec-11">
+      <title>Total Titratable Acidity</title>
+      <p>The total titratable acidity of langsat and duku fruit can be seen in Table 1. Langsat contains about
+twice acid than duku. The total acid contents in langsat and duku fruits are 1.04 and 0.504 percent,
+respectively. These acid concentrations are about the same with those reported for the ripe dokong fruit (an
+intermediate strain between langsat and duku) as 0.74 percent8. The total titratable acidity is also agreed with
+the pH of langsat and duku. The pH of langsat is lower than the pH of duku.</p>
+    </sec>
+    <sec id="sec-12">
+      <title>Retention time of standard organic acids</title>
+      <p>The chromatographic system can separate the organic acid standards fairly well (Figure 1), except for
+the lactic and acetic acids have some overlap. The retention time of standard organic acids can be seen in Table
+2. This retention time is slightly different with the previously analysis using different C18 column and HPLC
+system13. Although the sequence of these organic acids is the same with the previous study but the retention
+times are much shorter ranging from 2.4 to 4.6 minutes than those retention times of previous study ranging
+from 5.1 to 9.6 minutes.</p>
+    </sec>
+    <sec id="sec-13">
+      <title>Organic Acids in Langsat and Duku</title>
+      <p>The profiles of the organic acids in langsat and duku are the same, containing malic, ascorbic, citric and
+piroglutamic acids (Figure 2 and 3). The acids can be separated quite well by the chromatographic system.
+There are also have several other peaks that could be organic acids or other organic compounds are not
+identified yet. There are need other organic acid standard to be tested or using other chromatographic methods
+such as gas chromatography mass spectrometer (GC-MS) to determine these unidentified peaks.
+The different in both fruit organic acids is the content of these organic acids is less in the duku compared to
+those in the langsat as can be seen on the size of those related peaks in Figure 2 and 3.</p>
+      <p>The organic acid content in langsat and duku fruits can be seen in Table 3. The major organic acids in
+these fruits are malic and citric acids with the concentrations varying from 0.7 to 0.4 percent for langsat and
+from 0.4 to 0.2 percent for duku. The present of ascorbic acid is low, varying from 0.022 to 0.034 percent, and
+the present of piroglutamic acid is very low varying from 0.002 to 0.003 percent. The present of ascorbic acid
+in the fruits is higher than that reported previously as 0.001 percent7.</p>
+      <p>The total organic acid content in langsat is higher than in duku, 1.1 and 0.6 percent, respectively or
+almost half in duku than in langsat. Both the major organic acid contents are higher in the langsat compared to
+those in duku. But the ascorbic acid content is higher in duku compared to that in langsat. Higher organic acid
+content in langsat than in duku is agreed with the total titratable acid and the pH of those fruits (Table 1). The
+taste of langsat fruit is also sourer compared to the taste of duku fruit.</p>
+    </sec>
+    <sec id="sec-14">
+      <title>Conclusion References</title>
+      <p>Several organic acids in langsat and duku fruits are found including malic, citric, ascorbic and
+piroglutamic acids. The malic and citric acids are the main organic acids in both fruits with the concentration
+(%) of 0.691 and 0.391 for langsat and 0.386 and 0.180 for duku, respectively. These organic acid
+concentrations are agreed with the pH and total titratable acid in both fruits. The pH of langsat is 3.85 and that
+of duku is 4.56, while the total titratable acid for langsat is 1.04 and that for duku is 0.503 percent.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="ref1">
+        <mixed-citation>
+          <string-name>
+            <surname>Gomis</surname>
+            ,
+            <given-names>D.B.</given-names>
+          </string-name>
+          and
+          <string-name>
+            <surname>Alonso</surname>
+          </string-name>
+          , J.J.M. Organic acids. In: Nollet L.M.L. Handbook of food analysis. Second Edition. Revised and Expanded. Marcel Dekker. New York. USA.
+          <volume>2004</volume>
+          ,
+          <fpage>573</fpage>
+          -601
+          <string-name>
+            <surname>Suarez</surname>
+            ,
+            <given-names>M.H.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rodrıguez</surname>
+            ,
+            <given-names>E.R.</given-names>
+          </string-name>
+          , and
+          <string-name>
+            <surname>Romero</surname>
+            ,
+            <given-names>C.D.</given-names>
+          </string-name>
+          <article-title>Analysis of organic acid content in cultivars of tomato harvested in Tenerife</article-title>
+          .
+          <source>Eur. Food Res</source>
+          . Technol.,
+          <year>2008</year>
+          ,
+          <volume>226</volume>
+          :
+          <fpage>423</fpage>
+          -
+          <lpage>435</lpage>
+          Medlicott,
+          <string-name>
+            <surname>A.P.</surname>
+          </string-name>
+          and
+          <string-name>
+            <surname>Thompson</surname>
+            ,
+            <given-names>A.K.</given-names>
+          </string-name>
+          <year>.</year>
+          .
+          <article-title>Analysis of sugars and organic acids in ripening mango fruits (Mangifera indica L. var Keitt) by high performance liquid chromatography J</article-title>
+          .
+          <source>Scie. Food</source>
+          ,
+          <year>1985</year>
+          ,
+          <volume>36</volume>
+          :
+          <fpage>561</fpage>
+          -
+          <lpage>566</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref2">
+        <mixed-citation>
+          <string-name>
+            <surname>Wu</surname>
+            ,
+            <given-names>B.H.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Quilot</surname>
+            ,
+            <given-names>B.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Génard</surname>
+            ,
+            <given-names>M.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Kervella</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          and
+          <string-name>
+            <surname>Li</surname>
+            ,
+            <given-names>S.H.</given-names>
+          </string-name>
+          .
+          <article-title>Changes in sugar and organic acid concentrations during fruit maturation in peaches, P. davidiana and hybrids as analyzed by principal component analysis</article-title>
+          .
+          <source>Scientia Horticulturae</source>
+          ,
+          <year>2005</year>
+          ,
+          <volume>103</volume>
+          :
+          <fpage>429</fpage>
+          -
+          <lpage>439</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref3">
+        <mixed-citation>
+          <string-name>
+            <surname>Nisperos-Carriedo</surname>
+            ,
+            <given-names>M.O.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Buslig</surname>
+            ,
+            <given-names>B.S.</given-names>
+          </string-name>
+          and
+          <string-name>
+            <surname>Shaw</surname>
+            ,
+            <given-names>E.P.</given-names>
+          </string-name>
+          <article-title>Simultaneous detection of dehydroascorbic, ascorbic, and some organic acids in fruits and vegetables by HPLC</article-title>
+          . J. of Agric. and Food Chem.,
+          <year>1992</year>
+          ,
+          <volume>40</volume>
+          :
+          <fpage>1127</fpage>
+          -
+          <lpage>1130</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref4">
+        <mixed-citation>
+          <string-name>
+            <surname>Shui</surname>
+            ,
+            <given-names>G.</given-names>
+          </string-name>
+          and
+          <string-name>
+            <surname>Leong</surname>
+          </string-name>
+          ,
+          <string-name>
+            <surname>L.P.</surname>
+          </string-name>
+          <article-title>Separation and determination of organic acids and phenolic compounds in fruit juices and drinks by high-performance liquid chromatography Journal of Chromatography A</article-title>
+          ,
+          <year>2002</year>
+          ,
+          <volume>15</volume>
+          :
+          <fpage>89</fpage>
+          -
+          <lpage>96</lpage>
+          Morton, J. Langsat. In: Morton, J.F. (Editor)
+          <article-title>Fruits of warm climates</article-title>
+          .
+          <source>1987</source>
+          , p.
+          <fpage>201</fpage>
+          -
+          <lpage>203</lpage>
+          . Miami, FL.
+        </mixed-citation>
+      </ref>
+      <ref id="ref5">
+        <mixed-citation>
+          <string-name>
+            <surname>Tarmizi</surname>
+            ,
+            <given-names>S.A.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Norlia</surname>
+            ,
+            <given-names>Y. M.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Pauziah</surname>
+            and
+            <given-names>S. L.</given-names>
+          </string-name>
+          <string-name>
+            <surname>Tham</surname>
+          </string-name>
+          .
+          <year>1998</year>
+          .
+          <article-title>Changes in fruit colour and composition of dokong (Lansium domesticum Corr.) during maturation</article-title>
+          .
+          <source>J. Trop. Agric. and Fd. Sc</source>
+          .,
+          <year>1998</year>
+          ,
+          <volume>26</volume>
+          :
+          <fpage>127</fpage>
+          -
+          <lpage>133</lpage>
+          <string-name>
+            <surname>Laohakunjit</surname>
+            ,
+            <given-names>N.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kerdchoechuen</surname>
+            ,
+            <given-names>O.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Matta</surname>
+            ,
+            <given-names>F.B.</given-names>
+          </string-name>
+          , and
+          <string-name>
+            <surname>Silva</surname>
+            ,
+            <given-names>J.L.</given-names>
+          </string-name>
+          <article-title>Postharvest survey of volatile compounds in five tropical fruits using headspace-solid phase microextraction (HS-SPME)</article-title>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref6">
+        <mixed-citation>
+          HORTSCIENCE,
+          <year>2007</year>
+          ,
+          <volume>42</volume>
+          :
+          <fpage>309</fpage>
+          -
+          <lpage>314</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref7">
+        <mixed-citation>
+          Fourth Edition. Springer. New York,
+          <year>2010</year>
+          , 221-238
+          <string-name>
+            <surname>Nour</surname>
+            ,
+            <given-names>V.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Trandafir</surname>
+            ,
+            <given-names>I.</given-names>
+          </string-name>
+          , and Ionica, M.E.,
+          <article-title>HPLC Organic acid analysis in different citrus juices under reversed phase condition</article-title>
+          .
+          <source>Notulae Botanicae Horti Agrobotanici Cluj-Napoca</source>
+          ,
+          <year>2010</year>
+          ,
+          <volume>1</volume>
+          :
+          <fpage>44</fpage>
+          -
+          <lpage>48</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref8">
+        <mixed-citation>
+          <string-name>
+            <surname>Sitorus</surname>
+            ,
+            <given-names>L.P.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Pontoh</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          , and
+          <string-name>
+            <surname>Kamu</surname>
+            ,
+            <given-names>V.S.</given-names>
+          </string-name>
+          <article-title>Organic acid analysis by an HPLC system using Grace smart RP 18 5µ column</article-title>
+          .
+          <source>Submitted for publication at MIPA Online</source>
+          ,
+          <year>2015</year>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref9">
+        <mixed-citation>
+          <string-name>
+            <surname>Pontoh</surname>
+            ,
+            <given-names>J.</given-names>
+          </string-name>
+          <article-title>Analysis of organic acids in coconut brown sugar</article-title>
+          .
+          <source>Proceeding of The 5th Annual Basic Science International Conference. Malang</source>
+          , Indonesia,
+          <year>2015</year>
+          , p.
+          <fpage>249</fpage>
+          -
+          <lpage>251</lpage>
+          .
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

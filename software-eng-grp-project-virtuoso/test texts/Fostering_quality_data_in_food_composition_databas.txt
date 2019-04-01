@@ -1,0 +1,543 @@
+See	discussions,	stats,	and	author	profiles	for	this	publication	at:
+https://www.researchgate.net/publication/222149203
+
+Fostering	quality	data	in	food	composition
+databases:	Visions	for	the	future
+
+Article		in		Journal	of	Food	Composition	and	Analysis	·	June	2004
+
+DOI:	10.1016/j.jfca.2004.03.026
+
+CITATIONS
+61
+
+1	author:
+
+READS
+106
+
+Barbara	Burlingame
+Massey	University
+
+135	PUBLICATIONS			1,635	CITATIONS			
+
+SEE	PROFILE
+
+Some	of	the	authors	of	this	publication	are	also	working	on	these	related	projects:
+
+Sustainable	diets	in	the	context	of	sustainable	food	systems	View	project
+
+Mediterranean	diet	View	project
+
+All	content	following	this	page	was	uploaded	by	Barbara	Burlingame	on	17	August	2017.
+
+The	user	has	requested	enhancement	of	the	downloaded	file.
+
+ARTICLE IN PRESS
+
+Journal of Food Composition and Analysis 17 (2004) 251–258
+
+JOURNAL OF
+
+FOOD COMPOSITION
+
+AND ANALYSIS
+
+www.elsevier.com/locate/jfca
+
+Fostering quality data in food composition databases:
+
+Commentary
+
+visions for the future
+
+Barbara Burlingame
+
+Food and Agriculture Organization of the United Nations (FAO), Viale delle Terme di Caracalla, Rome, Italy
+
+Received 21 October 2003; received in revised form 12 February 2004; accepted 2 March 2004
+
+Abstract
+
+Food composition data are currently being used in ways not well-anticipated several years ago.
+Consequently, some of our criteria of quality, of both data per se and of databases, need to be re-examined,
+expanded, or otherwise adjusted. Among the key criteria for reassessment for the future vision are the
+concepts of representativeness, completeness, and a harmonized approach. The controversial issues related
+to these concepts are food biotechnology and biodiversity, climate change and other environmental
+phenomena, risk assessment, trade and regulatory requirements, and evidence for diet/disease relationships.
+r 2004 Elsevier Ltd. All rights reserved.
+
+1. Introduction
+
+Conventional criteria have long been established for judging the quality of food composition
+data and databases. More recently these criteria have been formalized and assessment tools have
+been developed for some individual nutrients (Mangels et al., 1993), and generically for
+unspeciﬁed nutrients (Holden et al., 2002). For assessing data quality, it has always been necessary
+to look deeply into the origins of the nutrient values, and to go back farther than the laboratory
+and the analytical methodology, all the way to the sampling protocols, the actual sampling, the
+care in sample handling and storage. For generating quality data, the sampling plan is where data
+quality begins. Whether generating new analytical data or assessing existing data, quality criteria
+will always be fundamentally related to the numbers at every stage: the number of samples
+collected, the number of samples prepared for analysis, the number of discrete samples analyzed,
+the number of analytical replicates, the number that represents the best value, and the number
+
+E-mail address: barbara.burlingame@fao.org (B. Burlingame).
+
+0889-1575/$ - see front matter r 2004 Elsevier Ltd. All rights reserved.
+doi:10.1016/j.jfca.2004.03.026
+
+ARTICLE IN PRESS
+
+252
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+that represents the variability. Each and every number is relevant for inclusion in a high quality
+database, for representativeness and completeness.
+
+The processes for creating a high quality database require an understanding among all the
+stakeholders regarding existing standards and requirements, so that databases can be prepared
+and data interchanged without ambiguity or loss of information (Klensin, 1992; Greenﬁeld and
+Southgate, 2003). To this end, some conventions have been established by the International
+Network of Food Data Systems (INFOODS), EUROFOODS, and other organizations related to
+food classiﬁcations and descriptions (Truswell et al., 1991; Møller and Ireland, 2000), component
+identiﬁcation (Klensin et al., 1989) and data interchange protocols (Klensin, 1992; Schlotke et al.,
+2000). More work is continuing in these technical areas (INFOODS, 2003).
+
+Regardless of the evolving uses of food composition data, the changing perception and the
+expansion of the concept of quality, conventional criteria will remain as the principal requirement
+for quality. Nevertheless, environmental events of recent years—the rapidly diminishing existing
+crop biodiversity, development of genetically modiﬁed organisms (GMOs), climate change and
+other natural and human-made environmental phenomena—demand attention and action from
+the food composition community. This, coupled with the changing morbidity and mortality
+statistics requiring risk assessment and more food composition evidence to establish diet/disease
+relationships, should lead us to a re-examination of data and database quality. Key concepts
+include representativeness, completeness, a harmonized approach and documentation.
+
+2. Representativeness and data quality
+
+‘‘Representativeness’’
+
+is a word long used to assess data as suitable or not for a food
+composition database. Early manuals and procedures required the compilers of food composition
+databases to ask if the data were representative. Usually this meant, are they reasonable
+representations of year-round, nation-wide means and good enough to permit the assessment of
+nutrient intakes and their impact on the health of populations. If the answers were no, the data
+were judged to be not of sufﬁcient quality for inclusion in national food composition databases
+(Southgate, 1985). Later, the question of the representativeness of data was evaluated in the
+context of ‘‘representative of what?’’ and therefore differed from application to application (Rand
+et al., 1991). Since most food composition database were developed for assessing dietary
+adequacy, representativeness still meant year-round, nationwide mean values, and either a
+composite sample constructed from market share data or calculated values from data from the
+analysis of individual samples. ‘‘Representative’’ is a word called upon by those who feel that
+contaminant data have no place in a food composition database, since generally, contaminant
+data are not representative of the food per se; they simply reﬂect some conditions of a speciﬁc time
+and place. In all these situations, many data would be excluded.
+
+‘‘Representativeness’’ is therefore ambiguous as it relates to quality. Some of the highest quality
+data, when viewed against several criteria, come from non-representative sampling (e.g.
+experimental plots; specially bred cultivars). Exclusion of data on the grounds of representative-
+ness may have been a pragmatic approach in the days when the data were used primarily to assess
+dietary adequacy, and before the widespread availability of powerful relational database
+management systems and microchip technologies. However, the documented uses of food
+
+ARTICLE IN PRESS
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+253
+
+composition databases now cover many specialized ﬁelds in health, agriculture, trade, food
+science, environmental sciences, and economics and therefore the concept of representativeness
+must be revised. Many high quality data from experimental plantings, non-commercial cultivars,
+single time periods or seasons, and small geographical locations are useful, important data.
+Compositional data on speciﬁc cultivars are becoming increasingly useful for many purposes.
+Huang et al. (1999) reported that sweet potato cultivars in some Paciﬁc Islands differed in their
+beta carotene content by a factor of 60, and for reasons unconcerned with nutrient content, the
+low beta carotene varieties were the ones promoted by the agriculture extension workers. Vitamin
+A deﬁciency diseases are still pervasive in certain parts of the Paciﬁc, and therefore these nutrient
+data, cultivar by cultivar, are absolutely basic to agriculture and nutrition policies and
+interventions. Yet resources are insufﬁcient for this work in the Paciﬁc (FAO, 2003a), and in
+many parts of the world.
+
+The term ‘‘substantial equivalence’’ entered into force of law in Europe in the regulations of the
+European Parliament (EC, 1997), and concerns novel foods and novel food ingredients, including
+GMOs. According to this regulation, a novel food or GMO must demonstrate substantial
+equivalence to existing products in regard to their composition, nutritional content, and level of
+undesirable substances contained therein. The ‘‘competent authority’’ must be provided with the
+necessary information, including the known results of all studies which have been carried out as
+well as any other information available to demonstrate the equivalence and safety of the food.
+
+The ability to assess ‘‘substantial equivalence’’ in GMOs requires compositional data on the
+existing biodiversity of that food—i.e., the cultivars of a species. This information is lost to many
+databases because individual cultivar data were not deemed representative. Samples were usually
+collected, pooled and analysed as a big composite, or in some cases, individually analysed but
+compiled only as a calculated mean. The recommendations of
+the International Rice
+Commission’s 20th Session provide some important directions for food composition data
+generators and compilers (FAO, 2002):
+The Commission recommended that:
+
+1. Existing biodiversity of rice varieties and their nutritional composition need to be explored
+
+before engaging in transgenics.
+
+2. Nutrient content needs to be among the criteria in cultivar promotion.
+3. Cultivar-speciﬁc nutrient analysis and data dissemination should be systematically undertaken.
+
+3. Completeness
+
+The issue of ‘‘completeness’’ provides one of the signiﬁcant quality dilemmas for food
+composition databases. The ideal food composition database would provide data on all foods and
+food components of interest to the entire spectrum of user groups. However, the ideal of a truly
+complete database is an impossible objective (Greenﬁeld and Southgate, 2003).
+
+There are two broad approaches to deal with the reality of the situation: (1) develop a strategy
+for establishing priorities for selecting the food items to be included in a database based on
+conventional data quality, and accept the fact of missing foods and missing food components
+if analytical data are not available; or (2) provide a database with a mixture of data
+
+ARTICLE IN PRESS
+
+254
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+types—analysed, borrowed, imputed, best guess—with no missing ‘‘core’’ foods, and no missing
+values for core components. Each approach has its protagonists.
+
+This has been one of the more divisive issues when quality is discussed. It need not be, however.
+For some user groups, completeness is a criterion of quality. A high quality database may contain
+some low quality analytical data, and many non-analytical data from estimations and
+calculations. As long as the quality of each value is properly documented, the database can be
+regarded as high quality for reasons of its completeness.
+
+The importance of a complete database of core foods and components (i.e., no missing key
+foods or key nutrient values) is clear for evaluating dietary intakes from food consumption
+surveys. Even though ‘‘best guess’’ or ‘‘best ﬁt’’ estimates are not of high quality, the complete
+database provides a better tool for dietary intake assessments than one with missing values.
+Charrondiere et al. (2002) reported errors of greater than 20 percent in some key nutrient
+estimations when the database was not complete. Thus the complete database is of higher quality
+even if some of the data are not.
+
+Completeness, along with representativeness, has a new and compelling dimension in the age of
+biotechnology. A complete database would be one that would present a comprehensive proﬁle of
+nutrients, cultivar by cultivar, and allow the assessment of substantial equivalence. No such
+database currently exists, and yet the concept of substantial equivalence has entered into legal
+force, as described above (EC, 1997). Each and every food commodity needs such a database, and
+some are in preparation (ILSI, 2003). Limiting the process is the scarcity of analytical data, because
+of the scarcity of funding, on the intraspecies differences in composition. The irony is that expensive
+biotechnology is moving forward rapidly to improve the nutrient contents of food plants, when the
+existing biodiversity may already provide such a cultivar. A comprehensive analytical program of
+nutrient content of germ plasm could provide the data to answer that question, and also provide
+the data to deal with substantial equivalence if GMOs are judged to be needed.
+
+The divisiveness continues when deciding what constitutes the details of completeness. In
+FAO’s Basic Statistics Division, composition data not accompanied by refuse values render the
+database incomplete and of poor quality. For others essential data may include phytates, scientiﬁc
+names, speciﬁc cultivar data, individual fatty acids, and more.
+
+In the area of diet and disease relationships, a comprehensive examination of the nutrients in
+the food supply of a country is fundamental. In the recent joint report of the World Health
+Organization and the FAO on nutrition and chronic diseases, the strength of evidence for risk is
+categorized as convincing, probable, possible and insufﬁcient (WHO/FAO, 2003). Yet without
+sufﬁcient quality and quantity of compositional data—nutrients, bioactive non-nutrients, and
+contaminants—all diet/disease evidence would be insufﬁcient (Burlingame, 2003).
+
+4. Harmonized approach
+
+Very many things are not harmonized in our food composition arena. International standards
+development has started, with some areas having well-deﬁned standards while others are loose and
+contentious. Areas being addressed by INFOODS or its Regional Data Centres include the following:
+
+* Component identiﬁcation;
+* Food identiﬁcation;
+
+ARTICLE IN PRESS
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+255
+
+* Units and modes of expression;
+* Data quality and integrity;
+* International interchange formats.
+
+Units of measure provide some rich case studies relevant to harmonization. The International
+System (SI), the decimal system of weights and measures based on the meter and the kilogram, was
+ﬁrst established in France in 1791 (Penzes, 2003). In 1866, the US Congress authorized the
+use of the metric system and supplied each state with a set of standard metric weights and
+measures.
+
+Since then, the SI system has gained nearly worldwide acceptance (BIPM, 2003). Only three
+countries have not designated SI as their ofﬁcial system: Liberia, Myanmar and the United States.
+The National Aeronautics and Space Administration (NASA) provides the best illustration of
+the consequences of not having a harmonized approach to units. On 23 September 1999, NASA
+lost a $125 million Mars Orbiter because a Lockheed Martin engineering team used the so-called
+English units of measurement, while the space agency’s team used metric units. Following an
+investigation, the NASA Ofﬁce of the Inspector General’s report recommended the following:
+
+‘‘By law and policy, the metric system is the preferred system of measurement within NASA.
+However, our review found that use of the metric system is inconsistent across the Agency. A
+waiver system, which was required by law and put into effect to track metric usage and encourage
+conversion, is no longer in usey NASA’s program and functional ofﬁces should use SI as the
+preferred system for interactions with the external community in public events, educational
+materials, and web site viewing. English units can be presented parenthetically (NASA, 2001).’’
+Nevertheless, NASA continues to present non-SI units—pounds, feet, Fahrenheit, miles—in its
+
+web-based materials (NASA, 2003).
+
+The Journal of Food Composition and Analysis, and most scientiﬁc journals in current
+publication, speciﬁes to authors that the SI system must be used for reporting units of
+measurement. Basic data for food composition include energy, and the SI unit for energy is the
+joule. Yet the use of the non-SI unit for energy, the calorie, is widespread.
+
+Fig. 1 shows the ratio of kcal to kJ used in the scientiﬁc literature, based on a review of CAB
+Abstracts (CAB International, 2003). There has been a shift since 1975, when it was nearly 14:1 in
+favor of kcal. In the 12-month period ending July 2003, the ratio was approximately 1.6:1, an
+improvement, but still favoring the non-SI kcal. Surprisingly, of the more than 500 occurrences of
+
+ 
+
+J
+k
+:
+l
+
+a
+c
+k
+ 
+f
+o
+o
+i
+t
+a
+R
+
+ 
+
+16
+14
+12
+10
+8
+6
+4
+2
+0
+
+1972-5
+
+1976-8
+
+1979-81
+
+1982-3
+
+1984-6
+
+1987-9
+
+1990-1
+
+1992
+
+1993-4
+
+1995
+
+1996-8
+
+2001-2003
+1998-00
+
+Source: CAB Abstracts, 1972-2003
+
+Fig. 1. Ratio of energy values expressed as kcal:kJ in the scientiﬁc literature from 1972 to 2003.
+
+ARTICLE IN PRESS
+
+256
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+units of energy in the year’s abstracts, only 12 papers provided both units, and nearly 300
+abstracts provided only kcal. The occurrences of kJ and kcal in the abstracts of nutrition journals
+for the past ﬁve years in CAB shows that only the Journal of Food Composition and Analysis
+strictly adheres to the SI kJ policy.
+
+Many published food composition tables and databases present both units of energy, e.g. the
+United States (USDA, 2003). A few present only kJ, e.g. South Africa (Kruger et al., 1998), while
+a few others only present kcal (Tee et al., 1997). The Food and Agriculture Organization of the
+United Nations presents data on energy in kcal only in its statistical databases (FAO, 2003b).
+
+The SI has been actively and passively endorsed by many nutrition-related international
+organizations and learned societies, through afﬁliated and ofﬁcial journals which specify the use
+of SI units, and by virtue of afﬁliation with the International Council for Science. However, at
+least one nutrition journal currently states that SI units are no longer required (EJCN, 2003).
+
+5. Documentation
+
+The ﬁnal consideration of quality is documentation. In the era of microchip technologies, full
+documentation is a reasonable expectation. This includes data and all metadata, in the form of
+numbers, words, images, algorithms, and more. From the ﬁnest detail of the sample plan to each
+and every raw analytical value to the most aggregated of ﬁnal mean values, the food composition
+database can accommodate this documentation. Extensive documentation cannot be published in
+simple food composition tables, yet it is the responsibility of the compiler to have all the quality
+documentation recorded in the database and available when needed (Greenﬁeld and Southgate,
+2003). Compromises are necessary when we report data, but one thing should never be
+compromised and that is proper documentation. A dubious value can be captured in a database,
+as long as it is documented as dubious.
+
+6. Conclusions
+
+Generating high quality data for a food composition database is often an expensive proposition
+for both developed and developing countries. The cost of establishing and/or maintaining
+infrastructures, equipment, personnel, and consumables can be prohibitive. The number of
+analyses required per nutrient per food, in order for the value to be judged as high quality, is
+likewise expensive. It therefore becomes economical for the analytical facilities used in countries
+for food regulatory purposes and international food trade to be used as food composition
+facilities and provide basic datasets to assess malnutrition and support the preservation of food
+plant biodiversity.
+
+As the future unfolds before us, we start to realize that issues of quality in food composition
+work need to be re-examined. Some criteria by which we judge the quality of data will necessarily
+remain unchanged. Other quality criteria need revision or redeﬁning. Examples include the
+concept of
+that may include
+contaminants and other compounds.
+
+‘‘representativeness’’ and the analysis of
+
+the ‘‘total diet’’
+
+ARTICLE IN PRESS
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+257
+
+The need for scientists to proceed cautiously with the genetic modiﬁcation of the nutrient
+content of foods, coupled with the need to proceed swiftly with the analyses, documentation and
+preservation of
+the often compositionally unique and rapidly diminishing existing food
+biodiversity, is a new challenge for the food composition community. The recommendations of
+the International Rice Commission (FAO, 2002) can serve as a useful model at the interface of
+nutrition and biotechnology, whereby the nutrient content of the existing biodiversity of crops is
+examined before engaging in genetic modiﬁcation of food crops. Nutrient analyses to identify
+cultivars with superior nutrient contents are less expensive, less controversial, serve multiple useful
+purposes, and for many crops may render genetic modiﬁcation unnecessary.
+
+International support is necessary and INFOODS continues to provide assistance in standards
+development at the international level, and training and capacity building at the national and
+regional levels. However, international support for countries and regions is not sufﬁcient or
+sustainable, and countries need to institutionalize food composition activities in both agriculture
+and health. The areas described in this paper are no longer the future—they are the present—and
+food composition scientists and organizations need to embrace them to ensure the quality and
+relevance of their work.
+
+References
+
+BIPM, 2003. The Bureau International des Poids et Mesures (BIPM). http://www.bipm.fr/
+Burlingame, B., 2003. Evidence for diet and chronic disease relationships requires food composition data. J. Food
+
+Comp. Anal. 16, 109.
+
+CAB International, 2003. CAB ABSTRACTS database, 1972–2003.
+Charrondiere, U.R., Vignat, J., Møller, A., Ireland, J., Becker, W., Church, S., Farran, A., Holden, J., Klemm, C.,
+Linardou, A., Mueller, D., Salvini, S., Serra-Majem, L., Skeie, G., van Staveren, W., Unwin, I., Westenbrink, S.,
+Slimani, N., Riboli, E., 2002. The European Nutrient Database (ENDB) for nutritional epidemiology. J. Food
+Comp. Anal. 15, 435–451.
+
+EC, 1997. Regulation (EC) 258/97 concerning novel foods and novel food ingredients; OJ L 43/1 14.2.97. European
+
+Commission.
+
+EJCN, 2003. European Journal of Clinical Nutrition. Instructions for Authors. http://www.nature.com/ejcn/
+FAO, 2002. Report of the International Rice Commission 20th Session (23–26 July 2002, Bangkok), FAO, Rome.
+FAO, 2003a. OCEANIAFOODS Food Composition Data activities. http://www.fao.org/infoods/oceafds.htm
+FAO, 2003b. FAOSTAT, FAO Statistical Databases. http://apps.fao.org/.
+Greenﬁeld, H., Southgate, D.A.T., 2003. Food composition data: production, management and use. FAO, Rome.
+Holden, J.M., Bhagwat, S.A., Patterson, K.Y., 2002. Development of a multinutrient data quality evaluation system.
+
+J. Food Comp. Anal. 15 (4), 339–348.
+
+Huang, A.S., Tanudjaja, L., Lum, D., 1999. Content of alpha-, beta-Carotene, and dietary ﬁber in 18 sweet potato
+
+varieties grown in Hawaii. J. Food Comp. Anal. 12, 147–151.
+
+ILSI, 2003. ILSI Crop Composition Database. The International Life Sciences Institute. http://www.cropcomposi-
+
+tion.org/
+
+INFOODS, 2003. The International Network of Food Data Systems. http://www.fao.org/infoods.
+Klensin, J.C., 1992. INFOODS: Food Composition Data Interchange Handbook. United Nations University Press,
+
+Tokyo, Japan.
+
+Klensin, J.C., Feskanich, D., Lin, V., Truswell, A.S., Southgate, D.A.T., 1989. Identiﬁcation of Food Components for
+
+Data Interchange. United Nations University, Tokyo.
+
+Kruger, M., Sayed, N., Langenhoven, M., Holing, F., 1998. Composition of South African Foods: Vegetables and
+
+Fruit Supplement to the MRC Food Composition Tables 1991. Medical Research Council, Cape Town.
+
+ARTICLE IN PRESS
+
+258
+
+B. Burlingame / Journal of Food Composition and Analysis 17 (2004) 251–258
+
+Mangels, A.R., Holden, J.M., Beecher, G.R., Forman, M.R., Lanza, E., 1993. Carotenoid content of fruits and
+
+vegetables: an evaluation of analytic data. Am. J. Diet. Assoc. 93, 284–296.
+
+Møller, A.,
+
+Ireland,
+
+J., 2000. LanguaL 2000—The LanguaL Thesaurus. Report by the COST Action
+99—EUROFOODS Working Group on Food Description, Terminology and Nomenclature, Report No. EUR
+19540, European Commission.
+
+NASA, 2001. Feb 20. Letter from the Ofﬁce of the Inspector General: Assessment of NASA’s Use of the Metric System,
+
+G-00-021. www.hq.nasa.gov/ofﬁce/oig/hq/inspections/g-00-021.pdf
+
+NASA, 2003. National Aeronautics and Space Administration. http://www.nasa.gov/home/index.html
+Penzes, W.B., 2003. Time Line for the Deﬁnition of the Meter. http://www.mel.nist.gov/div821/museum/timeline.htm
+Rand, W.M., Pennington, J.A.T., Murphy, S.P., Klensin, J.C., 1991. Compiling Data for Food Composition Data
+
+Bases. United Nations University Press, Tokyo, Japan.
+
+Schlotke, F., Becker, W., Ireland, J., Møller, A., Ovaskainen, M.-L., Monspart, J., Unwin, I., 2000. EUROFOODS
+recommendations for food composition database management and data interchange. J. Food Comp. Anal. 13 (4),
+709–744.
+
+Southgate, D.A.T., 1985. Criteria to be used for acceptance of data in nutrient database. Ann Nutr Metabol (suppl) 29,
+
+49–53.
+
+Tee, E.S., Noor, M.I., Azudin, M.N., Idris, K., 1997. Nutrient Composition of Malaysian Foods 4th edition. Institute
+
+of Medical Research, Kuala Lumpur.
+
+Truswell, A.S., Bateson, D.J., Madaﬁglio, K.C., Pennington, J.A.T., Rand, W.R., Klensin, J.C., 1991. INFOODS
+guidelines for describing foods: a systematic approach to describing foods to facilitate international exchange of
+food composition data. J. Food Comp. Anal. 4, 18–38.
+
+USDA, 2003. USDA National Nutrient Database for Standard Reference, Release 16. Nutrient Data Laboratory.
+
+http://www.nal.usda.gov/fnic/foodcomp
+
+WHO/FAO, 2003. Diet, Nutrition and the Prevention of Chronic Diseases. Report of a Joint WHO/FAO Expert
+
+Consultation WHO Technical Report Series 916. http://www.fao.org/DOCREP/005/AC911E/AC911E00.HTM
+
+View publication stats
+View publication stats
+
+
