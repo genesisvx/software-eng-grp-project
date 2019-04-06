@@ -1,14 +1,16 @@
 import os
 
 from flask import Flask
+from flask_cors import CORS
 
 def create_app(test_config=None):
     # create and configure the app
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(__name__,template_folder="templates",static_folder="static",static_url_path="/flaskr/static", instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
+
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
@@ -30,5 +32,5 @@ def create_app(test_config=None):
     
     from . import search
     app.register_blueprint(search.bp)
-		
+    CORS(app , resources={r"/query":{"origins":"*"}})		
     return app

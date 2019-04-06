@@ -133,8 +133,10 @@ def filterTrigram(potential_trigram):
         return False
 
 def jarWrapper(path):
-        subprocess.call(['java' , '-cp' , './cermine-impl-1.14-SNAPSHOT-jar-with-dependencies.jar', 'pl.edu.icm.cermine.ContentExtractor' , '-outputs' , 'jats' , '-path' , str(path) ])
+        subprocess.call(['java' , '-cp' , './cermine-impl-1.14-SNAPSHOT-jar-with-dependencies.jar', 'pl.edu.icm.cermine.ContentExtractor' , '-outputs' , 'jats' , '-path' , str(path), '-timeout' , '300' ])
 
+#number of succesful extractions , a number 
+#20 words
 def process_pdf2txt(path):
     path = pathlib.Path(path)
 

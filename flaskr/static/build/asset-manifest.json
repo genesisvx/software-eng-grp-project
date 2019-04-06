@@ -1,0 +1,15 @@
+{
+  "main.css": "/flaskr/static/build/static/css/main.b566a10e.chunk.css",
+  "main.js": "/flaskr/static/build/static/js/main.3422acb1.chunk.js",
+  "main.js.map": "/flaskr/static/build/static/js/main.3422acb1.chunk.js.map",
+  "runtime~main.js": "/flaskr/static/build/static/js/runtime~main.7796c061.js",
+  "runtime~main.js.map": "/flaskr/static/build/static/js/runtime~main.7796c061.js.map",
+  "static/js/2.6b3fdf60.chunk.js": "/flaskr/static/build/static/js/2.6b3fdf60.chunk.js",
+  "static/js/2.6b3fdf60.chunk.js.map": "/flaskr/static/build/static/js/2.6b3fdf60.chunk.js.map",
+  "index.html": "/flaskr/static/build/index.html",
+  "precache-manifest.f42d91a7d5560d63717c4e3306e25f76.js": "/flaskr/static/build/precache-manifest.f42d91a7d5560d63717c4e3306e25f76.js",
+  "service-worker.js": "/flaskr/static/build/service-worker.js",
+  "static/css/main.b566a10e.chunk.css.map": "/flaskr/static/build/static/css/main.b566a10e.chunk.css.map",
+  "static/media/cff_logo.png": "/flaskr/static/build/static/media/cff_logo.a189584b.png",
+  "static/media/twotone-picture_as_pdf-24px.d48aec0d.svg": "/flaskr/static/build/static/media/twotone-picture_as_pdf-24px.d48aec0d.svg"
+}

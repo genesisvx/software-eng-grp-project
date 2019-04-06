@@ -1,9 +1,10 @@
-import subprocess , nltk , gensim , asyncio , time , concurrent.futures ,math
+import subprocess , nltk , gensim , asyncio , time , concurrent.futures ,math , time ,re , string
 from sparql import getConceptTagVirtuoso , getNTriplesFromConceptVirtuoso , getLabelFromConceptVirtuoso
 from elasticsearch import Elasticsearch , helpers
 from pathlib import Path
 from doc_processing import taggingHelper , ntripleHelper , getBigrams , getTrigrams
 import xml.etree.ElementTree as ET
+import numpy as np
 
 #configuration
 es_process_path = 'D:/elasticsearch-6.5.0/bin/elasticsearch.bat'
@@ -18,12 +19,13 @@ es = Elasticsearch([{'host':host , 'port':port}])
 
 #use 500k , reduce 5/6th of memory requirements and it seems sufficient for use 
 #https://stackoverflow.com/questions/50478046/memory-error-when-using-gensim-for-loading-word2vec
-#model = gensim.models.KeyedVectors.load_word2vec_format('C:/Users/Acer/Downloads/GoogleNews-vectors-negative300.bin/GoogleNews-vectors-negative300.bin',binary=True,limit=500000)
+model = gensim.models.KeyedVectors.load_word2vec_format('C:/Users/Acer/Downloads/GoogleNews-vectors-negative300.bin/GoogleNews-vectors-negative300.bin',binary=True,limit=500000)
 
 def putIndexMapping():
     mappings = {
 
         "properties":{
+            'link': {"type":"keyword"},
             'title' : {"type":"text",
                        "fields" : {
                             "raw" : {"type":"keyword"}
@@ -94,6 +96,7 @@ def indexHelper(f):
         action = {
                 "_index":index ,
                 "_type":doc_type ,
+                "link":str(f.resolve()).replace('.txt','.pdf'),
                 "title" : title ,
                 "paragraph_num" : para.index(p) ,
                 "paragraph" : p ,
@@ -164,10 +167,40 @@ def batchIndexDocuments(path):
         }
     }
     es.indices.put_settings(settings)
+
+def avg_vector(paragraph, model=model, num_features=300, index2word_set=model):
+    #function to average all words vectors in a given paragraph
+    #remove punctuation
+    regex = re.compile('[' + re.escape(string.punctuation) + '\\r\\t\\n]')
+    paragraph = regex.sub(" ", str(paragraph))
+
+    words = paragraph.split()
+
+    featureVec = np.zeros((num_features,), dtype="float32")
+    nwords = 0
+
+    for word in words:
+        if word in index2word_set:
+            nwords = nwords+1
+            featureVec = np.add(featureVec, model[word])
+
+    if nwords>0:
+        featureVec = np.divide(featureVec, nwords)
+    return featureVec
+
+def cosine_similarity(vec1,vec2):
+    dot = np.dot(vec1,vec2)
+    norm1 = np.linalg.norm(vec1)
+    norm2 = np.linalg.norm(vec2)
+    cos = dot / ( norm1 * norm2 )
+    if math.isnan(float(cos)):
+        cos = 1
+    return cos 
     
-def searchDoc(query):
+def searchDoc(query):   	
     potential_concepts = []
     concepts = []
+    conceptRaw = []
     broader = []
     broaderRaw = []
     narrower = []
@@ -175,41 +208,12 @@ def searchDoc(query):
     tokens = nltk.word_tokenize(query)
     tokens = [t for t in tokens if t not in nltk.corpus.stopwords.words('english')]
     outputList = []
-    
+    start = time.time()
     bigrams = getBigrams(" ".join(tokens))
     trigrams = getTrigrams(" ".join(tokens))
     bigrams = [" ".join(b) for b in bigrams]
     trigrams = [" ".join(t) for t in trigrams]
     tokens = tokens + bigrams + trigrams 
-
-    #synonyms set for the tokens
-    synset = []
-	
-    #for t in tokens:
-    #   try:
-    #        query = model.similar_by_word(t,topn=5)
-    #        for q in query:
-    #            synset.append(q[0])
-    #    except KeyError:
-    #        pass
-    
-   
-    bigrams = getBigrams(" ".join(tokens))
-    trigrams = getTrigrams(" ".join(tokens))
-    bigrams = [" ".join(b) for b in bigrams]
-    trigrams = [" ".join(t) for t in trigrams]
-    tokens = tokens + bigrams + trigrams 
-
-    #synonyms set for the tokens
-    # synset = []
-
-    # for t in tokens:
-    #     try:
-    #         query = model.similar_by_word(t,topn=5)
-    #         for q in query:
-    #             synset.append(q[0])
-    #     except KeyError:
-    #         pass
     
     asyncio.set_event_loop(asyncio.new_event_loop())      
     loop = asyncio.get_event_loop()
@@ -222,7 +226,11 @@ def searchDoc(query):
     for t in potential_concepts:
         if len(t['baseTag']['results']['bindings'])!=0:
             concepts.append({'baseTag':t['baseTag']['results']['bindings'][0]['concept']['value']})
-	
+
+    for c in concepts:
+    	conceptRaw += getLabelFromConceptVirtuoso(c['baseTag'])
+    conceptRaw = " ".join(conceptRaw)
+
     #get ntriples
     tempNtriples = loop.run_until_complete(ntripleHelper(concepts))
 
@@ -258,11 +266,12 @@ def searchDoc(query):
                 "bool" : {
                         "should" : [
                                 {"match" : {"paragraph":query}} ,
-                                {"match" : {"paragraph":{"query":broaderRaw , "boost":1.5}}},
-                                {"match" : {"paragraph":{"query":narrowerRaw , "boost":1.5}}},
+                                {"match" : {"paragraph":conceptRaw}},
+                                {"match" : {"paragraph":{"query":broaderRaw , "boost":0.5}}},
+                                {"match" : {"paragraph":{"query":narrowerRaw , "boost":0.5}}},
                                 {"match" : {"title":query}},
-                                {"terms" : {"concepts":narrower , "boost":2}},
-                                {"terms" : {"concepts":broader , "boost":2}},
+                                {"terms" : {"concepts":narrower , "boost":0.5}},
+                                {"terms" : {"concepts":broader , "boost":0.5}},
                                 {"terms_set" : {"concepts":{"terms":temp_concepts , "minimum_should_match_script":{"source":"params['min_terms']" , "params":{"min_terms":math.ceil(len(temp_concepts)*0.5)}}}}}
                             ] ,
                         # "must" : {
@@ -306,93 +315,12 @@ def searchDoc(query):
                         
                     }
                 },
-            "aggs" : {
-                "by_title" : {
-                    "terms" : {
-                        "field" : "title.raw" ,
-                        "order" : {"max_score":"desc"},
-                        } ,
-                    "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
-                    }
-                    } ,
-                }
-            }
-    else:
-        body = {
-            "query": {
-                "bool" : {
-                        "should" : [
-                                {"match" : {"paragraph":query}} ,
-                                {"match" : {"title":query}},
-                            ] ,
-                        
-                    },
-
-
+            "highlight" : {
+                "fields":{
+                    "paragraph":{},
                 },
-            "aggs" : {
-                "by_title" : {
-                    "terms" : {
-                        "field" : "title.raw" ,
-                        "order" : {"max_score":"desc"},
-                        } ,
-                    "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
-                    }
-                    } ,
-                }
-            }
+                "number_of_fragments":0,
 
-    data = es.search(index , doc_type , body , request_timeout = 10000)
-
-    for d in data['aggregations']['by_title']['buckets']:
-        print(d['key']) #print title of relevant docs
-
-    for d in data['aggregations']['by_title']['buckets']:
-        i = 0
-        for entry in d['by_top_hits']['hits']['hits']:
-            i = i + 1
-            if i > 4:
-                break
-          #  print(entry['_score'])
-           # print(entry['_source']['title'])
-          #  print(entry['_source']['paragraph'])
-            outputList.append(entry['_source']['title'])
-            outputList.append('\n')
-            outputList.append(entry['highlight']['paragraph'][0])
-            outputList.append('\n')
-            outputList.append('*'*100)
-            outputList.append('\n')
-            outputList.append('\n')
-
-    loop.close() # close event loop
-    print(data)
-    return outputList
-
-#prototype
-def searchDocPrototype():
-    query = "acid content langsat"
-    ntriples = []
-    temp_concepts = ['http://aims.fao.org/aos/agrovoc/c_24347' , 'http://aims.fao.org/aos/agrovoc/c_92']
-
-    if len(temp_concepts) != 0 and len(ntriples) !=0:
-        body = {
-            "query": {
-                "bool" : {
-                        "should" : [
-                                {"match" : {"paragraph":query}} ,
-                                {"match" : {"title":query}},
-                                {"terms" : {"ntriples.raw":ntriples}},
-                            ] ,
-                        "must" : {
-                                {"terms" : {"concepts":temp_concepts}},
-                            },
-                        
-                    }
-                
             },
             "aggs" : {
                 "by_title" : {
@@ -401,35 +329,8 @@ def searchDocPrototype():
                         "order" : {"max_score":"desc"},
                         } ,
                     "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
-                    }
-                    } ,
-                }
-        }
-    elif len(temp_concepts) != 0 and len(ntriples) == 0:
-        body = {
-            "query": {
-                "bool" : {
-                        "should" : [
-                                {"match" : {"paragraph":query}} ,
-                                {"match" : {"title":query}},
-                            ] ,
-                        "must" : {
-                                "terms" : {"concepts":temp_concepts},
-                            },
-                        
-                    }
-                },
-            "aggs" : {
-                "by_title" : {
-                    "terms" : {
-                        "field" : "title.raw" ,
-                        "order" : {"max_score":"desc"},
-                        } ,
-                    "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                        "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}},
                     }
                     } ,
                 }
@@ -439,7 +340,7 @@ def searchDocPrototype():
             "query": {
                 "bool" : {
                         "should" : [
-                                {"match" : {"paragraph":query}} ,
+                                {"match" : {"paragraph":{"query":query , "fuzziness":2} }} ,
                                 {"match" : {"title":query}},
                             ] ,
                         
@@ -447,6 +348,13 @@ def searchDocPrototype():
 
 
                 },
+            "highlight" : {
+                "fields":{
+                    "paragraph":{},
+                },
+                "number_of_fragments":0,
+
+            },                
             "aggs" : {
                 "by_title" : {
                     "terms" : {
@@ -454,29 +362,48 @@ def searchDocPrototype():
                         "order" : {"max_score":"desc"},
                         } ,
                     "aggs" : {
-                        "by_top_hits" : {"top_hits" : {"size":15}},
-                        "max_score" : {"max":{"script":{"source":"_score"}}}
+                        "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
+                        "max_score" : {"max":{"script":{"source":"_score"}}},
                     }
                     } ,
                 }
             }
 
-    breakpoint()
-    data = es.search(index , doc_type , body)
+    data = es.search(index , doc_type , body , request_timeout = 10000)
+    
 
     for d in data['aggregations']['by_title']['buckets']:
         print(d['key']) #print title of relevant docs
-
+    end = time.time()
+    print(end-start)
     for d in data['aggregations']['by_title']['buckets']:
         i = 0
         for entry in d['by_top_hits']['hits']['hits']:
             i = i + 1
             if i > 4:
                 break
-            print(entry['_source']['title'])
-            print(entry['_source']['paragraph'] + '\n')
-            print('*'*100)
-            
+          #  print(entry['_score'])
+        # print(entry['_source']['title']+'\n')
+        # print(entry['_source']['paragraph']+'\n')
+        # print(entry['highlight']['paragraph'][0]+'\n')
+            try: 
+                outputList.append({'score': entry['_score'],'link':entry['_source']['link'] , 'title':entry['_source']['title'] , 'paragraph':entry['highlight']['paragraph'][0]})
+            except KeyError:
+                outputList.append({'score': entry['_score'],'link':entry['_source']['link'] , 'title':entry['_source']['title'] , 'paragraph':entry['_source']['paragraph']})
+
+    qVector = avg_vector(query)
+
+    for output in outputList:
+        paraVector = avg_vector(output['paragraph'])
+        cosim = cosine_similarity(qVector,paraVector)
+        output['score'] = output['score'] * cosim
+
+    outputList.sort(key=lambda x:x['score'] , reverse=True)
+    print(outputList)
+    loop.close() # close event loop
+    return outputList
+
+
 
 
 			
