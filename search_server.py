@@ -2,7 +2,7 @@ import subprocess , nltk , gensim , asyncio , time , concurrent.futures ,math , 
 from sparql import getConceptTagVirtuoso , getNTriplesFromConceptVirtuoso , getLabelFromConceptVirtuoso
 from elasticsearch import Elasticsearch , helpers
 from pathlib import Path
-from doc_processing import taggingHelper , ntripleHelper , getBigrams , getTrigrams
+from doc_processing import taggingHelper , ntripleHelper , getBigrams , getTrigrams , filterGeneralTerms
 import xml.etree.ElementTree as ET
 import numpy as np
 
@@ -87,28 +87,30 @@ def indexHelper(f):
     if keywords_path.is_file():
         tempFile = open(keywords_path , 'r' , encoding='utf8',errors ='ignore')
         for line in tempFile:
-            tempArr= line.strip().split()
-            concepts.append(tempArr[1])
+            tempArr= line.strip().split('http')
+            concepts.append('http' + tempArr[1])
         tempFile.close()
 
     body = []
     for i ,p in enumerate(para):
-        action = {
-                "_index":index ,
-                "_type":doc_type ,
-                "link":str(f.resolve()).replace('.txt','.pdf'),
-                "title" : title ,
-                "paragraph_num" : para.index(p) ,
-                "paragraph" : p ,
-                "concepts" : concepts ,
-        }
-    
-        body.append(action)
+        #if less than 20 words , not a paragraph 
+        if len(p.split())>20:
+            action = {
+                    "_index":index ,
+                    "_type":doc_type ,
+                    "link":str(f.resolve()).replace('.txt','.pdf'),
+                    "title" : title ,
+                    "paragraph_num" : para.index(p) ,
+                    "paragraph" : p ,
+                    "concepts" : concepts ,
+            }
+        
+            body.append(action)
 
-        #batch the bulk operation to prevent MemoryError
-        if(i>0 and i%1000==0):
-            helpers.bulk(es , body , request_timeout = 100)
-            body = []
+            #batch the bulk operation to prevent MemoryError
+            if(i>0 and i%1000==0):
+                helpers.bulk(es , body , request_timeout = 100)
+                body = []
 
     #insert remainder of paragraphs
     helpers.bulk(es , body , request_timeout = 100)
@@ -213,7 +215,10 @@ def searchDoc(query):
     trigrams = getTrigrams(" ".join(tokens))
     bigrams = [" ".join(b) for b in bigrams]
     trigrams = [" ".join(t) for t in trigrams]
-    tokens = tokens + bigrams + trigrams 
+    tokens = tokens+bigrams+trigrams
+    # filter out unigrams if they also have bigrams/trigrams
+    # eg if have more specific terms , it is more important than the general term
+    #   tokens = filterGeneralTerms(tokens,filterGeneralTerms(bigrams,trigrams))
     
     asyncio.set_event_loop(asyncio.new_event_loop())      
     loop = asyncio.get_event_loop()
@@ -245,38 +250,58 @@ def searchDoc(query):
     for b in broader:
         broaderRaw += getLabelFromConceptVirtuoso(b)
     broaderRaw = " ".join(broaderRaw)    
+    print(len(broaderRaw.split()))
 
-    for n in narrower:
-        narrowerRaw += getLabelFromConceptVirtuoso(n)
-    narrowerRaw = " ".join(narrowerRaw)    
+    #some concepts have too many narrower concepts , those narrower concepts in turn have too many alt and pref labels
+    #if the total tokens > 1024 , will cause exception
+    for i,n in enumerate(narrower):
+        
+        if len(narrower)>5:
+            prefOnly = 1
+        else:
+            prefOnly = 0
+
+        if i == 5:
+            break
+        
+        narrowerRaw += getLabelFromConceptVirtuoso(n,prefOnly)
+    narrowerRaw = " ".join(narrowerRaw)  
+    print(len(narrowerRaw.split()))
 
 
-    #remove stopwords from tokens and combine them into query again
-    #to facilitate in full text search
+
+    # #remove stopwords from tokens and combine them into query again
+    # #to facilitate in full text search
+    tokens = nltk.word_tokenize(query)
     tokens = [t for t in tokens if t not in nltk.corpus.stopwords.words('english')]
     query = " ".join(tokens)
 
+
     temp_concepts = []
+
     for c in concepts:
         temp_concepts.append(c['baseTag'])
+    
+    temp_concepts = list(set(temp_concepts))
 
     if len(temp_concepts) != 0 and len(tempNtriples) > 0:
         body = {
+            "from":0 , "size":10000,
             "query": {
                 "bool" : {
                         "should" : [
                                 {"match" : {"paragraph":query}} ,
-                                {"match" : {"paragraph":conceptRaw}},
+                                {"match" : {"paragraph":{"query":conceptRaw,"boost":0.5}}},
                                 {"match" : {"paragraph":{"query":broaderRaw , "boost":0.5}}},
                                 {"match" : {"paragraph":{"query":narrowerRaw , "boost":0.5}}},
                                 {"match" : {"title":query}},
                                 {"terms" : {"concepts":narrower , "boost":0.5}},
                                 {"terms" : {"concepts":broader , "boost":0.5}},
-                                {"terms_set" : {"concepts":{"terms":temp_concepts , "minimum_should_match_script":{"source":"params['min_terms']" , "params":{"min_terms":math.ceil(len(temp_concepts)*0.5)}}}}}
+                                {"terms_set" : {"concepts":{"terms":temp_concepts , "boost":2, "minimum_should_match_script":{"source":"params['min_terms']" , "params":{"min_terms":len(temp_concepts)}}}}},
                             ] ,
-                        # "must" : {
-                        #         "terms_set" : {"concepts":{"terms":temp_concepts , "minimum_should_match_script":{"source":"params['min_terms']" , "params":{"min_terms":1}}}},
-                        #     },
+                        # "must" : [
+                        #         {"terms_set" : {"concepts":{"terms":temp_concepts , "minimum_should_match_script":{"source":"params['min_terms']" , "params":{"min_terms":len(temp_concepts)}}}}}
+                        #     ],
                         
                     }
                 
@@ -293,6 +318,7 @@ def searchDoc(query):
                     "terms" : {
                         "field" : "title.raw" ,
                         "order" : {"max_score":"desc"},
+                        "size" : 100,
                         } ,
                     "aggs" : {
                         "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
@@ -303,6 +329,7 @@ def searchDoc(query):
         }
     elif len(temp_concepts) != 0 and len(tempNtriples) == 0:
         body = {
+            "from":0 , "size":10000,
             "query": {
                 "bool" : {
                         "should" : [
@@ -327,6 +354,7 @@ def searchDoc(query):
                     "terms" : {
                         "field" : "title.raw" ,
                         "order" : {"max_score":"desc"},
+                        "size" : 100,
                         } ,
                     "aggs" : {
                         "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
@@ -337,6 +365,7 @@ def searchDoc(query):
             }
     else:
         body = {
+            "from":0 , "size":10000,
             "query": {
                 "bool" : {
                         "should" : [
@@ -360,6 +389,7 @@ def searchDoc(query):
                     "terms" : {
                         "field" : "title.raw" ,
                         "order" : {"max_score":"desc"},
+                        "size":100,
                         } ,
                     "aggs" : {
                         "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
@@ -371,7 +401,8 @@ def searchDoc(query):
 
     data = es.search(index , doc_type , body , request_timeout = 10000)
     
-
+    print(data['hits']['total'])
+    print(int(data['aggregations']['by_title']['sum_other_doc_count']) + len(data['aggregations']['by_title']['buckets']))
     for d in data['aggregations']['by_title']['buckets']:
         print(d['key']) #print title of relevant docs
     end = time.time()
@@ -391,19 +422,57 @@ def searchDoc(query):
             except KeyError:
                 outputList.append({'score': entry['_score'],'link':entry['_source']['link'] , 'title':entry['_source']['title'] , 'paragraph':entry['_source']['paragraph']})
 
-    qVector = avg_vector(query)
+    # qVector = avg_vector(query)
 
-    for output in outputList:
-        paraVector = avg_vector(output['paragraph'])
-        cosim = cosine_similarity(qVector,paraVector)
-        output['score'] = output['score'] * cosim
+    # for output in outputList:
+    #     paraVector = avg_vector(output['paragraph'])
+    #     cosim = cosine_similarity(qVector,paraVector)
+    #     output['score'] = output['score'] * cosim
 
-    outputList.sort(key=lambda x:x['score'] , reverse=True)
-    print(outputList)
+    # outputList.sort(key=lambda x:x['score'] , reverse=True)
+    #print(outputList)
     loop.close() # close event loop
     return outputList
 
+def baselineSearchDoc(query):
+    tokens = nltk.word_tokenize(query)
+    tokens = [t for t in tokens if t not in nltk.corpus.stopwords.words('english')]
+    query = " ".join(tokens)
 
+    body = {
+        "from":0 , "size":10000,
+        "query": {
+            "bool" : {
+                    "should" : [
+                            {"match" : {"paragraph":{"query":query , "fuzziness":2} }} ,
+                            {"match" : {"title":query}},
+                        ] ,
+                    
+                },
+
+
+            },
+        "highlight" : {
+            "fields":{
+                "paragraph":{},
+            },
+            "number_of_fragments":0,
+
+        },                
+        "aggs" : {
+            "by_title" : {
+                "terms" : {
+                    "field" : "title.raw" ,
+                    "order" : {"max_score":"desc"},
+                    "size":100,
+                    } ,
+                "aggs" : {
+                    "by_top_hits" : {"top_hits" : {"highlight":{"fields":{"paragraph":{}} , "number_of_fragments":0} , "size":15}},
+                    "max_score" : {"max":{"script":{"source":"_score"}}},
+                }
+                } ,
+            }
+        }
 
 
 			

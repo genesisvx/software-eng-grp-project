@@ -77,19 +77,33 @@ def isAlphabet(word):
 	except Exception:
 		return False
 
-def getLabelFromConceptVirtuoso(concept):
+def getLabelFromConceptVirtuoso(concept , prefOnly=0):
 	sparql = SPARQLWrapper('http://localhost:8890/sparql')
-	sparql.setQuery("""
-		PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-		select ?oo where {{
-			{{<{0}> skos:prefLabel ?o}}
-			UNION
-			{{<{0}> skos:altLabel ?o}}
-			BIND(str(?o) as ?oo) 
-			}}
-		GROUP BY ?oo
-		""".format(concept))
+	if prefOnly == 1:
+		sparql.setQuery("""
+			PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+			select ?oo where {{
+				{{<{0}> skos:prefLabel ?o}}
+				BIND(str(?o) as ?oo) 
+				}}
+			GROUP BY ?oo
+			""".format(concept))
+	else:
+		sparql.setQuery("""
+			PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+			select ?oo where {{
+				{{<{0}> skos:prefLabel ?o}}
+				UNION
+				{{<{0}> skos:altLabel ?o}}
+				BIND(str(?o) as ?oo) 
+				}}
+			GROUP BY ?oo
+			""".format(concept))
+
+
 	sparql.setReturnFormat(JSON) 
 	results = sparql.query().convert()
 	results = [x['oo']['value'] for x in results['results']['bindings'] if isAlphabet(x['oo']['value'])]

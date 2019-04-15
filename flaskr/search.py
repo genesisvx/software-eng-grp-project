@@ -36,7 +36,6 @@ def my_form_post(search):
 def query():
     query = request.json['query']
     results = search_server.searchDoc(query)
-    print(results)
     response = Response(json.dumps(results),mimetype="application/json")
     return response
 

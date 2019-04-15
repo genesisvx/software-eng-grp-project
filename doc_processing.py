@@ -132,6 +132,21 @@ def filterTrigram(potential_trigram):
     else:
         return False
 
+def filterGeneralTerms(general,specific):
+    temp = []
+    flag = 1
+    for g in general:
+        for s in specific:
+            if g in s:
+                flag = 0;
+                break
+        if flag == 1:
+            temp.append(g)
+        flag = 1
+    
+    temp = temp + specific
+    return temp
+
 def jarWrapper(path):
         subprocess.call(['java' , '-cp' , './cermine-impl-1.14-SNAPSHOT-jar-with-dependencies.jar', 'pl.edu.icm.cermine.ContentExtractor' , '-outputs' , 'jats' , '-path' , str(path), '-timeout' , '300' ])
 
