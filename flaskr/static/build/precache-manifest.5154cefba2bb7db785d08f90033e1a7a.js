@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "9444c07351961185ce28",
+    "revision": "081fe99399ec3c9686f9",
     "url": "/flaskr/static/build/static/css/main.b566a10e.chunk.css"
   },
   {
-    "revision": "9444c07351961185ce28",
-    "url": "/flaskr/static/build/static/js/main.3422acb1.chunk.js"
+    "revision": "081fe99399ec3c9686f9",
+    "url": "/flaskr/static/build/static/js/main.2423321a.chunk.js"
   },
   {
     "revision": "60d8fc558b2086d6fa28",
     "url": "/flaskr/static/build/static/js/runtime~main.7796c061.js"
   },
   {
-    "revision": "6ed1480a3101ba67564d",
-    "url": "/flaskr/static/build/static/js/2.6b3fdf60.chunk.js"
+    "revision": "fc452adec28c2dc2d82a",
+    "url": "/flaskr/static/build/static/css/2.ca021e99.chunk.css"
+  },
+  {
+    "revision": "fc452adec28c2dc2d82a",
+    "url": "/flaskr/static/build/static/js/2.bdbe4537.chunk.js"
   },
   {
     "revision": "a189584b318f518171880a09db4861dd",
@@ -24,7 +28,7 @@ self.__precacheManifest = [
     "url": "/flaskr/static/build/static/media/twotone-picture_as_pdf-24px.d48aec0d.svg"
   },
   {
-    "revision": "6f500cc7504e3feaaf6974a2cc243535",
+    "revision": "4e8cd7fbf53e5c456b74f569fa4a9895",
     "url": "/flaskr/static/build/index.html"
   }
 ];

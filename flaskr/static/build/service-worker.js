@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/flaskr/static/build/precache-manifest.f42d91a7d5560d63717c4e3306e25f76.js"
+  "/flaskr/static/build/precache-manifest.5154cefba2bb7db785d08f90033e1a7a.js"
 );
 
 workbox.clientsClaim();
